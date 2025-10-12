@@ -1,0 +1,1184 @@
+\section{3.1}
+ \subsection{} %A
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       \( \alpha_{1} + 2\alpha_{2} - \alpha_{3} = (3, 8, -8)^{\mathrm{T}} \)
+			 \item %(2)
+			       \( (\alpha_{1} + \alpha_{2}) + 2(\alpha_{2} + \alpha_{3}) - 3(\alpha_{3} + \alpha_{1}) = (3, 12, -19)^{\mathrm{T}} \)
+			 \item %(3)
+			       \( (\alpha_{1} - \alpha_{2}) + (\alpha_{2} - \alpha_{3}) + (\alpha_{3} - \alpha_{1}) = (0, 0, 0)^{\mathrm{T}} \)
+		 \end{enumerate}
+
+
+	 \paragraph{} %2
+		 依题意,有\(  \gamma = \frac{5}{3}\beta - \frac{2}{3}\alpha = \frac{1}{3}(4, 10, 16)^{\mathrm{T}} \)
+
+
+	 \paragraph{} %3
+		 \(\gamma = \frac{3}{2}\beta - \frac{1}{2}\alpha = (1, 2, 3, 4)^{\mathrm{T}}\)
+
+
+	 \paragraph{} %4
+		 \begin{enumerate}
+			 \item %(1)
+			       依题意,
+
+			       \( \begin{aligned}
+				       V_{1} & = \left\{ x_{1}\boldsymbol{\varepsilon}_{1} + x_{2}\boldsymbol{\varepsilon}_{2} \mid x_{1}, x_{2} \in \mathbf{R} \right\} \\
+				             & = \left\{ (x_{1}, x_{2}, 0, 0)^{\mathrm{T}} \mid x_{1}, x_{2} \in \mathbf{R} \right\}
+			       \end{aligned} \)
+			 \item %(2)
+			       对任意向量 \( \alpha =
+			       \begin{pmatrix}
+				       a \\
+				       b \\
+				       c \\
+				       d\end{pmatrix} \), 总有 \( \alpha = a\boldsymbol{\varepsilon}_{1} + b\boldsymbol{\varepsilon}_{2} + c\boldsymbol{\varepsilon}_{3} + d\boldsymbol{\varepsilon}_{4} \),
+
+			       故 \( \boldsymbol{\varepsilon}_{1}, \boldsymbol{\varepsilon}_{2}, \boldsymbol{\varepsilon}_{3}, \boldsymbol{\varepsilon}_{4} \) 生成的子空间为 \(\mathbf{R}^{4}\)
+		 \end{enumerate}
+
+
+	 \paragraph{} %5
+		 \( V = \left\{ k_{1}\alpha + k_{2}\beta = (k_{1}, k_{1}, k_{2})^{\mathrm{T}} \mid k_{1}, k_{2} \in \mathbf{R} \right\} \), 几何意义为过 \( z \) 轴的平面.
+
+
+	 \paragraph{} %6
+		 \begin{enumerate}
+			 \item %(1)
+			       不是. 设 $f(x) \in V$, 则 $f(x) - f(x) = 0 \notin V$
+
+			       $\therefore V$ 不能构成线性空间
+			 \item %(2)
+			       是. 首先, $V$ 中的矩阵有加法运算, 且满足交换律, 结合律.
+
+			       $V$ 中有零矩阵 $O$, 使得对任意 $A \in V$, 有 $A + O = A$.
+
+			       对 $\forall A \in V$, $\exists -A \in V$, 使 $A + (-A) = 0$, 从而性质 \((1)\sim (4)\) 满足.
+
+			       由矩阵乘法定义易验证性质 \((5)\sim (8)\) 也满足.
+
+			       故 $V$ 是线性空间.
+		 \end{enumerate}
+
+
+ \subsection{} %B
+
+	 \paragraph{} %1
+		 证明: \(\because V_{1} \cap V_{2} \subset V_{1},\ V_{1} \cap V_{2} \subset V_{2}\), 则:
+
+		 \begin{enumerate}[label=(\roman*),left=2em]
+			 \item %(1)
+			       \(\alpha + \beta = \beta + \alpha\)
+			 \item %(2)
+			       \((\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)\)
+			 \item %(3)
+			       又由于 \(0 \in V_{1},\ 0 \in V_{2}\), 故 \(0 \in V_{1} \cap V_{2}\)
+
+			       对任何 \(\alpha \in V_{1} \cap V_{2}\), 有 \(\alpha + 0 = \alpha\)
+
+			 \item %(4)
+			       对 \(\alpha \in V_{1} \cap V_{2}\), 一定有 \(\beta \in V_{1} \cap V_{2}\), 使 \(\alpha + \beta = 0\)
+			 \item %(5)
+			       \(1\alpha=\alpha\)
+			 \item %(6)
+			       \(\lambda(\mu\alpha) = (\lambda\mu)\alpha\)
+			 \item %(7)
+			       \((\lambda + \mu)\alpha = \lambda\alpha + \mu\alpha\)
+			 \item %(8)
+			       \(\lambda(\alpha + \beta) = \lambda\alpha + \lambda\beta\)
+		 \end{enumerate}
+		 故 \(V_{1} \cap V_{2}\) 也是 \(\mathbf{R}\) 上的线性空间
+
+	 \paragraph{} %2
+		 证明同1, 易验证满足八条性质.
+
+	 \paragraph{} %3
+		 可以.
+		 \begin{enumerate}
+			 \item %(1)
+			       \(a \oplus b = ab = ba = b \oplus a\)
+			 \item %(2)
+			       \((a \oplus b) \oplus c = ab \oplus c = abc = a \oplus (b \oplus c)\)
+			 \item %(3)
+			       \(a \oplus 1 = a \cdot 1 = a\) （存在零元为1）
+			 \item %(4)
+			       \(a \oplus \frac{1}{a} = a \cdot \frac{1}{a} = 1\) （存在负元素为\(\frac{1}{a}\)）
+			 \item %(5)
+			       \(1 \odot a = a^{1} = a\)
+			 \item %(6)
+			       \(k \odot (l \odot a) = k \odot a^{l} = a^{lk} = a^{kl} = (kl) \odot a\)
+			 \item %(7)
+			       \((k + l) \odot a = a^{k + l} = a^{k} \cdot a^{l} = a^{k} \oplus a^{l} = k \odot a \oplus l \odot a\)
+			 \item %(8)
+			       \(k \odot (a \oplus b) = k \odot ab = k \odot a \oplus k \odot b\)
+		 \end{enumerate}
+		 故可以构成线性空间
+
+
+	 \paragraph{} %4
+		 \begin{enumerate}
+			 \item %(1)
+			       证明: 设 \(0_{1},\ 0_{2}\) 为两个零元素, 则
+			       \[
+				       \alpha + 0_{1} = \alpha,\quad \alpha + 0_{2} = \alpha
+			       \]
+			       于是
+			       \[
+				       \begin{cases}
+					       0_{1} + 0_{2} = 0_{1} \\
+					       0_{2} + 0_{1} = 0_{2}
+				       \end{cases}
+				       \Rightarrow 0_{1} = 0_{1} + 0_{2} = 0_{2} + 0_{1} = 0_{2}
+			       \]
+			       故零元素唯一
+			 \item %(2)
+			       证明: 设 \(\alpha\) 有两个负元素 \(\beta,\ \gamma\), 则 \(\alpha + \beta = 0,\ \alpha + \gamma = 0\)
+
+			       则 \(\beta = \beta + 0 = \beta + (\alpha + \gamma) = (\alpha + \beta) + \gamma = 0 + \gamma = \gamma\)
+
+			 \item %(3)
+			       证明: \(\alpha + 0\alpha = 1\alpha + 0\alpha = (1 + 0)\alpha = 1\alpha = \alpha\), 所以 \(0\alpha = 0\),
+
+			       \(
+			       \alpha + (-1)\alpha = [1 + (-1)]\alpha = 0\alpha = 0
+			       \)
+
+			       故 \((-1)\alpha = -\alpha\). \(k0 = k[\alpha + (-1)\alpha] = k\alpha + (-k)\alpha = [k + (-k)]\alpha = 0\alpha = 0\)
+
+			 \item %(4)
+			       证明: 若 \(k \neq 0\), 则 \(\frac{1}{k}(k\alpha) = \frac{1}{k} \cdot 0 = 0\) 而 \(\frac{1}{k}(k\alpha) = (\frac{1}{k} \cdot k)\alpha = 1\alpha = \alpha\)
+			       故 \(\alpha = 0\)
+		 \end{enumerate}
+
+
+\section{3.2}
+ \subsection{} %A
+
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       \( \left(\begin{array}{cccc:c}
+				       1 & -2 & 3 & -1 & 1 \\
+				       3 & -1 & 5 & -3 & 2 \\
+				       2 & 1  & 2 & -2 & 3
+			       \end{array}\right)
+			       \to
+			       \left(\begin{array}{cccc:c}
+				       1 & 0 & \frac{7}{5}  & -1 & 0  \\
+				         & 1 & -\frac{9}{5} & 0  & 0  \\
+				         &   &              &    & -1
+			       \end{array}\right) \)
+
+			       故不能表示.
+			 \item %(2)
+			       \( \left(\begin{array}{cccc:c}
+					       1 & 2 & 1 & 1 & 2 \\
+					       1 & 2 & 2 & 2 & 3 \\
+					       1 & 2 & 2 & 3 & 2
+				       \end{array}\right)
+			       \to
+			       \left(\begin{array}{cccc:c}
+					       1 & 2 & 0 & 0 & 1  \\
+					         &   & 1 & 0 & 2  \\
+					         &   &   & 1 & -1
+				       \end{array}\right)
+			       \)
+			       故可以表示.
+
+			       \( \beta = \alpha_{1} + 2\alpha_{3} - \alpha_{4} \)
+		 \end{enumerate}
+
+
+	 \paragraph{} %2
+		 \begin{enumerate}
+			 \item %(1)
+			       有零向量 \( \alpha_{3}^{\mathrm{T}} \),故可取 \( k_{1}=k_{2}=0 \), \( k_{3}=1 \) 使 \( k_{1}\alpha_{1}^{\mathrm{T}} + k_{2}\alpha_{2}^{\mathrm{T}} + k_{3}\alpha_{3}^{\mathrm{T}} = 0 \). 故线性相关.
+			 \item %(2)
+			       \(
+			       \begin{pmatrix}
+				       1 & 4 & 3 \\
+				       2 & 5 & 3 \\
+				       3 & 6 & 3\end{pmatrix} \to \begin{pmatrix}
+				       1 & 0 & -1 \\
+				       0 & 1 & 1  \\
+				       0 & 0 & 0
+			       \end{pmatrix} \), 故 \( \alpha_{3} + \alpha_{1} - \alpha_{2} = 0 \) 线性相关
+			 \item %(3)
+			       \(
+			       \begin{pmatrix}
+				       1 & 4 & 5 \\
+				       2 & 5 & 6 \\
+				       3 & 6 & 8\end{pmatrix} \to
+			       \begin{pmatrix}
+				       1 &   &   \\
+				         & 1 &   \\
+				         &   & 1\end{pmatrix} \), 故线性无关.
+		 \end{enumerate}
+
+
+	 \paragraph{} %3
+		 \begin{enumerate}
+			 \item %(1)
+			       错误. 如 \( \alpha_{1} =
+			       \begin{pmatrix}
+				       0 \\
+				       0\end{pmatrix} \), \( \alpha_{2} =
+			       \begin{pmatrix}
+				       1 \\
+				       0\end{pmatrix} \)
+			 \item %(2)
+			       错误. 如 \( \alpha_{1} =
+			       \begin{pmatrix}
+				       0 \\
+				       0\end{pmatrix} \), \( \alpha_{2} =
+			       \begin{pmatrix}
+				       1 \\
+				       0\end{pmatrix} \)
+			 \item %(3)
+			       正确. 若 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{s} \) 线性相关, 则存在不全为 0 的 \( k_{1}, k_{2}, \cdots, k_{s} \), 使 \[ k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{s}\alpha_{s} = 0 \]
+
+			       不妨设 \( k_{i} \neq 0 \), 则 \( \alpha_{i} = -\frac{1}{k_{i}}(k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{s}\alpha_{s}) \).
+
+			       即 \( \alpha_{i} \) 可以由其余的向量线性表示,矛盾!
+
+			       故向量组线性无关.
+
+			 \item %(4)
+			       正确. 为(3)的逆否命题
+			 \item %(5)
+			       错误. 如 \( \alpha_{1} =
+			       \begin{pmatrix}
+				       0 \\
+				       0\end{pmatrix} \), \( \alpha_{2} =
+			       \begin{pmatrix}
+				       1 \\
+				       0\end{pmatrix} \)
+			 \item %(6)
+			       正确. 依题意, 存在不全为 0 的 \( k_{1}, k_{2}, \cdots, k_{s} \) 使 \( k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{s}\alpha_{s} = 0 \)
+
+			       则 \( k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{s}\alpha_{s} + 0\beta_{1} + 0\beta_{2} + \cdots + 0\beta_{t} = 0 \)
+
+			       故整体组相关
+			 \item %(7)
+			       错误. 如 \( \alpha_{1} =
+			       \begin{pmatrix}
+				       1 \\
+				       0\end{pmatrix} \), \( \alpha_{2} =
+			       \begin{pmatrix}
+				       0 \\
+				       1\end{pmatrix} \), \( \beta_{1} =
+			       \begin{pmatrix}
+				       1 \\
+				       0\end{pmatrix} \), \( \beta_{2} =
+			       \begin{pmatrix}
+				       0 \\
+				       1\end{pmatrix} \)
+		 \end{enumerate}
+
+
+	 \paragraph{} %4
+		 \( A\alpha =
+		 \begin{pmatrix}
+			 a    \\
+			 2a+3 \\
+			 3a+4\end{pmatrix} \) 与 \( \alpha =
+		 \begin{pmatrix}
+			 a \\
+			 1 \\
+			 1\end{pmatrix} \) 线相关, 则对应元素成比例, 有
+		 \[
+			 \frac{a}{a} = \frac{2a+3}{1} = \frac{3a+4}{1}
+		 \]
+		 得 \( a = -1 \)
+
+
+	 \paragraph{} %5
+		 设 \( k_{1}(\alpha_{1} + \alpha_{2}) + k_{2}(\alpha_{2} + \alpha_{3}) + k_{3}(\alpha_{3} + \alpha_{1}) = 0 \)
+
+		 则整理得 \( (k_{1} + k_{3})\alpha_{1} + (k_{1} + k_{2})\alpha_{2} + (k_{2} + k_{3})\alpha_{3} = 0 \)
+
+		 由于 \( \alpha_{1}, \alpha_{2}, \alpha_{3} \) 线性无关, 则
+		 \[ \begin{cases} k_{1} + k_{3} = 0 \\
+				 k_{1} + k_{2} = 0 \\
+				 k_{2} + k_{3} = 0\end{cases} \Rightarrow
+			 \begin{pmatrix}
+				 k_{1} \\
+				 k_{2} \\
+				 k_{3}\end{pmatrix} =
+			 \begin{pmatrix}
+				 0 \\
+				 0 \\
+				 0\end{pmatrix} \]
+
+		 故 \( \alpha_{1} + \alpha_{2}, \alpha_{2} + \alpha_{3}, \alpha_{3} + \alpha_{1} \) 线性无关.
+
+		 又 \( (\alpha_{1} - \alpha_{2}) + (\alpha_{2} - \alpha_{3}) + (\alpha_{3} - \alpha_{1}) = \alpha_{1} - \alpha_{2} + \alpha_{2} - \alpha_{3} + \alpha_{3} - \alpha_{1} = 0 \),
+
+		 故取 \( k_{1}', k_{2}', k_{3}' \) 为 \( 1,1,1 \),
+
+		 可知 \( \alpha_{1} - \alpha_{2}, \alpha_{2} - \alpha_{3}, \alpha_{3} - \alpha_{1} \) 线性相关.
+
+
+ \subsection{} %B
+
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       相关. 因为4个3维向量必然线性相关.
+			 \item %(2)
+			       无关. 考虑 \( \beta_{1}^{\mathrm{T}} = (1, 0, 0) \), \( \beta_{2}^{\mathrm{T}} = (0, 2, 3) \), \( \beta_{3}^{\mathrm{T}} = (0, 0, 4) \) 则
+			       \[ \begin{vmatrix} 1 & 0 & 0 \\
+                0 & 2 & 3 \\
+                0 & 0 & 4\end{vmatrix} = 8 \neq 0 \]
+			       故 \( \beta_{1}^{\mathrm{T}}, \beta_{2}^{\mathrm{T}}, \beta_{3}^{\mathrm{T}} \) 线性无关. 则其延伸组 \( \alpha_{1}^{\mathrm{T}}, \alpha_{2}^{\mathrm{T}}, \alpha_{3}^{\mathrm{T}} \) 必线性无关.
+		 \end{enumerate}
+
+	 \paragraph{} %2
+		 {\bf 充分性}: 若 \( \alpha_{i} \) 可以由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{i-1} \) 线性表示, 则
+		 \[ \alpha_{i} = k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{i-1}\alpha_{i-1} \]
+		 即 \[ k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{i-1}\alpha_{i-1} - \alpha_{i} = 0 \]
+		 取 \( k_{i} = -1 \), \( k_{j+1} = 0 \) (\( j \leq i-1 \)), 可知 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{m} \) 线性相关.
+
+		 {\bf 必要性}: 由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{m} \) (\( \alpha_{i} \neq 0 \)) 线性相关, 则存在不全为0的 \( k_{1}, k_{2}, \cdots, k_{m} \), 使
+		 \[ k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{m}\alpha_{m} = 0 \]
+		 则从 \( k_{m} \) 开始往前, 必有一个 \( k_{i} \) (\( i \neq 1 \)) 使 \( k_{i} \neq 0 \) (否则 \( k_{1}\alpha_{1} = 0 \), 又 \( \alpha_{1} \neq 0 \), 矛盾). 故有
+		 \[ k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{i}\alpha_{i} = 0 \]
+		 \[ \Rightarrow \alpha_{i} = -\frac{1}{k_{i}}(k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{i-1}\alpha_{i-1}) \]
+
+	 \paragraph{} %3
+		 证明: 据已知有
+		 \begin{align*}
+			 r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r})       & = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}, \beta)   \\
+			 r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r-1}) + 1 & = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r-1}, \beta)
+		 \end{align*}
+		 考察
+		 \[ (\alpha_{1}\quad \alpha_{2}\quad \alpha_{3}\quad \cdots\quad \alpha_{r-1})
+			 \begin{pmatrix}
+				 x_{1}  \\
+				 x_{2}  \\
+				 \vdots \\
+				 x_{r-1}\end{pmatrix} = \alpha_{r} \]
+		 \begin{align*}
+			 r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{r-1}, \alpha_{r}) & \leq r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{r-1}) + 1                \\
+			                                                            & = r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{r-1}, \beta)                \\
+			                                                            & \leq r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{r-1}, \alpha_{r}, \beta) \\
+			                                                            & = r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{r}).
+		 \end{align*}
+		 故 \( r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r-1}) + 1 = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}) \), 即 \( \alpha_{r} \) 不能由 \( \alpha_{1}, \cdots, \alpha_{r-1} \) 表出.
+
+		 由于 \( r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r-1}, \beta) = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}, \beta) = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r-1}, \beta, \alpha_{r}) \)
+
+		 故 \( \alpha_{r} \) 可以由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r-1}, \beta \) 线性表出.
+
+
+ \subsection{} %C
+
+	 \paragraph{} %1
+		 证明: 设 \( k_{1}\alpha + k_{2}A\alpha + \cdots + k_{m}A^{m-1}\alpha = 0 \) 则
+		 \[ A^{m-1}(k_{1}\alpha + k_{2}A\alpha + \cdots + k_{m}A^{m-1}\alpha) = 0 \]
+		 \[ \Rightarrow k_{1}A^{m-1}\alpha = 0 \]
+		 又 \( A^{m-1}\alpha \neq 0 \)
+
+		 \( \therefore k_{1} = 0 \)
+		 同理依次对假设式乘 \( A^{m-2}, A^{m-3}, \cdots, A, 1 \), 有
+		 \[ k_{2} = 0,\ k_{3} = 0,\ \cdots,\ k_{m} = 0 \]
+		 故 \( \alpha, A\alpha, \cdots, A^{m-1}\alpha \) 线性无关.
+
+	 \paragraph{} %2
+		 证明: 设 \[ k_{1}\alpha_{1} + k_{2}\alpha_{2} + k_{3}\alpha_{3} = 0 \tag{1} \]
+
+		 则 \[ k_{1}A\alpha_{1} + k_{2}A\alpha_{2} + k_{3}A\alpha_{3} = 0 \hspace{\fill}\]
+
+		 即 \[ (k_{1} + k_{2})\alpha_{1} + (k_{1} + k_{3})\alpha_{2} + k_{3}\alpha_{3} = 0 \tag{2}\]
+		 (2) - (1) 得
+		 \[
+			 k_{2}\alpha_{1} + k_{3}\alpha_{2} = 0\tag{3}
+		 \]
+
+
+		 则 \[
+			 k_{2}A\alpha_{1} + k_{3}A\alpha_{2} = 0
+		 \]
+
+
+		 即 \[
+			 k_{2}\alpha_{1} + k_{3}\alpha_{1} + k_{3}\alpha_{2} = 0 \tag{4}
+		 \]
+
+
+		 (4) - (3) \( \Rightarrow \) \( k_{3}\alpha_{1} = 0 \), 又 \( \alpha_{1} \neq 0 \)
+
+		 \(\therefore k_{3} = 0\)
+
+		 将 \( k_{3} \) 往(3)、(1)回代可得\[ k_{2} = 0,\ k_{1} = 0 \]
+
+		 故 \( \alpha_{1}, \alpha_{2}, \alpha_{3} \) 线性无关.
+
+	 \paragraph{} %3
+		 证明: 设 \( k_{1}\beta_{1} + k_{2}\beta_{2} + \cdots + k_{s}\beta_{s} = 0 \)
+
+		 可得 \( (k_{1} + k_{2})\alpha_{1} + (k_{1} + k_{2})\alpha_{2} + (k_{2} + k_{3})\alpha_{3} + \cdots + (k_{s-1} + k_{s})\alpha_{s} = 0 \)
+
+		 由于 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 线性无关, 故
+		 \[ \left\{ \begin{array}{l}
+				 k_{1}   + 0      +  \cdots  +  k_{s} = 0      \\
+				 k_{1}   + k_{2}  +  \cdots  +  0 = 0          \\
+				 0       + k_{2}  +  k_{3}   +  \cdots + 0 = 0 \\
+				 \cdots                                        \\
+				 0       + \cdots +  k_{s-1} + k_{s} = 0
+			 \end{array}\right. \]
+		 其系数行列式 \[ |A| =
+			 \begin{vmatrix}
+				 1      & 0      & 0      & \cdots & 1      \\
+				 1      & 1      & 0      & \cdots & 0      \\
+				 0      & 1      & 1      & \cdots & 0      \\
+				 \vdots & \vdots & \vdots & \ddots & \vdots \\
+				 0      & \cdots & 0      & 1      & 1
+			 \end{vmatrix} =
+			 \begin{vmatrix}
+				 1 &   &        &   &              \\
+				   & 1 &        &   &              \\
+				   &   & \ddots &   &              \\
+				   &   &        & 1 &              \\
+				   &   &        &   & 1-(-1)^{s-1}
+			 \end{vmatrix} = 1 - (-1)^{s-1} \]
+
+		 则当 \( s \) 为奇数时 \( |A| = 2 \), 向量组线性无关;
+
+		 当 \( s \) 为偶数时 \( |A| = 0 \), 向量组线性相关.
+
+
+\section{3.3}
+
+ \subsection{} %A
+
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       由 \(
+			       \begin{pmatrix}
+				       1 & 0 & 2  & 0 \\
+				         & 1 & -3 & 0 \\
+				         &   &    & 0\end{pmatrix} \) 知 \( \alpha_{1}, \alpha_{2} \) 为一个极大线性无关组. 秩为2.
+			 \item %(2)
+			       由 \(
+			       \begin{pmatrix}
+				       1 & 0 & 2  & 0 \\
+				       0 & 1 & -3 & 0 \\
+				       0 & 0 & 4  & 5\end{pmatrix} \to
+			       \begin{pmatrix}
+				       1 &   &   & -\frac{5}{2} \\
+				         & 1 &   & \frac{15}{4} \\
+				         &   & 1 & \frac{5}{4}\end{pmatrix} \) 知 \( \alpha_{1}, \alpha_{2}, \alpha_{4} \) 为一个极大线性无关组. 秩为3.
+		 \end{enumerate}
+
+	 \paragraph{} %2
+		 \begin{enumerate}
+			 \item %(1)
+			       不正确. 不一定是极大线性无关组
+			 \item %(2)
+			       正确. 若秩大于等于r, 则存在r个线性无关的向量, 与已知矛盾. 故命题正确.
+			 \item %(3)
+			       错误. 如 \( (1, 0)^{\mathrm{T}} \), \( (0, 1)^{\mathrm{T}} \), \( (2, 0)^{\mathrm{T}} \).
+			 \item %(4)
+			       正确. 由秩的定义, 存在 \(r\) 个线性无关的向量, 故其中的 \(r-1\) 个向量必线性无关
+		 \end{enumerate}
+
+	 \paragraph{} %3
+		 依题意, \( r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}) = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r+1}) = r \)
+
+		 则向量组A的秩为r.
+
+		 又 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 是r个线性无关的向量,
+
+		 设 \( \alpha_{j} \) (\( j=1,2,\cdots,n \)) 为向量组 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 中的任一向量
+
+		 则 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}, \alpha_{j} \) 线性相关
+
+		 故 A中任一向量都可以由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 线性表示
+
+		 从而 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 是极大线性无关组.
+
+	 \paragraph{} %4
+		 过渡矩阵为
+		 \[ \begin{aligned}
+				 Q & = (\alpha_{1}, \alpha_{2}, \alpha_{3})^{-1}(\beta_{1}, \beta_{2}, \beta_{3}) \\
+				   & =
+				 \begin{pmatrix}
+					 \frac{1}{2}  & 0 & \frac{1}{2}  \\
+					 \frac{1}{2}  & 0 & -\frac{1}{2} \\
+					 -\frac{1}{2} & 1 & \frac{1}{2}\end{pmatrix}
+				 \begin{pmatrix}
+					 1  & 1  & 0  \\
+					 -2 & 2  & 1  \\
+					 1  & -1 & -2\end{pmatrix}                                                        \\
+				   & =
+				 \begin{pmatrix}
+					 1  & 0 & -1 \\
+					 0  & 1 & 1  \\
+					 -2 & 1 & 0\end{pmatrix}
+			 \end{aligned} \]
+
+		 在基 \( (\alpha_{1}, \alpha_{2}, \alpha_{3}) \) 下: \(
+		 \begin{pmatrix}
+			 x_{1} \\
+			 x_{2} \\
+			 x_{3}\end{pmatrix} = (\alpha_{1}, \alpha_{2}, \alpha_{3})^{-1}
+		 \begin{pmatrix}
+			 1 \\
+			 1 \\
+			 1\end{pmatrix} =
+		 \begin{pmatrix}
+			 1 \\
+			 0 \\
+			 1\end{pmatrix} \)
+
+		 在基 \( (\beta_{1}, \beta_{2}, \beta_{3}) \) 下: \(
+		 \begin{pmatrix}
+			 y_{1} \\
+			 y_{2} \\
+			 y_{3}\end{pmatrix} = Q^{-1}
+		 \begin{pmatrix}
+			 x_{1} \\
+			 x_{2} \\
+			 x_{3}\end{pmatrix} =
+		 \begin{pmatrix}
+			 0 \\
+			 1 \\
+			 -1\end{pmatrix} \)
+
+	 \paragraph{} %5
+		 \begin{enumerate}
+			 \item %(1)
+			       \( (\alpha, \beta) = 1 \times (-2) + 2 \times 1 + 1 \times \frac{1}{2} = \frac{1}{2} \)
+
+			       \( (\alpha, \gamma) = 1 \times 2 + 2 \times (-2) + 1 \times 2 = 0 \)
+
+			       \( (\beta, \gamma) = 2 \times (-2) - 2 \times 1 + 2 \times \frac{1}{2} = -5 \)
+			 \item %(2)
+			       \( \frac{1}{|\alpha|}\alpha = \frac{1}{\sqrt{6}}
+			       \begin{pmatrix}
+				       1 \\
+				       2 \\
+				       1\end{pmatrix} \)
+			 \item %(3)
+			       \( \theta = \arccos \frac{|(\alpha, \beta)|}{|\alpha||\beta|} = \arccos \frac{1}{3\sqrt{14}} \)
+		 \end{enumerate}
+
+	 \paragraph{} %6
+		 \begin{enumerate}
+			 \item %(1)
+			       \(
+			       \begin{pmatrix}
+				       1 & \frac{1}{\sqrt{2}} \\
+				       0 & \frac{1}{\sqrt{2}}\end{pmatrix}
+			       \begin{pmatrix}
+				       1                  & 0                  \\
+				       \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\end{pmatrix} =
+			       \begin{pmatrix}
+				       \frac{3}{2} & \frac{1}{2} \\
+				       \frac{1}{2} & \frac{1}{2}\end{pmatrix} \neq E \)
+
+			       \( \begin{pmatrix}
+				       2 & 2 & 1  \\
+				       2 & 1 & -2 \\
+				       1 & 2 & 2
+			       \end{pmatrix}
+			       \begin{pmatrix}
+				       2 & 2  & 1 \\
+				       2 & 1  & 2 \\
+				       1 & -2 & 2
+			       \end{pmatrix}
+			       = \begin{pmatrix}
+				       9 & 8 & 0 \\
+				       8 & 9 & 4 \\
+				       0 & 4 & 9
+			       \end{pmatrix} \neq E \)
+
+			       \( \begin{pmatrix}
+				       2 & 2 & 1  \\
+				       2 & 1 & -2 \\
+				       1 & 2 & 2
+			       \end{pmatrix}
+			       \begin{pmatrix}
+				       2 & 2  & 1 \\
+				       2 & 1  & 2 \\
+				       1 & -2 & 2
+			       \end{pmatrix} =
+			       \begin{pmatrix}
+				       9 &   &   \\
+				         & 9 &   \\
+				         &   & 9
+			       \end{pmatrix} \neq E \)
+
+			       \( \frac{1}{3}
+			       \begin{pmatrix}
+				       2 & -2 & 1  \\
+				       2 & 1  & -2 \\
+				       1 & 2  & 2
+			       \end{pmatrix} \cdot \frac{1}{3} \begin{pmatrix}
+				       2  & 2  & 1 \\
+				       -2 & 1  & 2 \\
+				       1  & -2 & 2
+			       \end{pmatrix} =
+			       \begin{pmatrix}
+				       1 &   &   \\
+				         & 1 &   \\
+				         &   & 1
+			       \end{pmatrix} = E \)
+
+			       故 \( \frac{1}{3}
+			       \begin{pmatrix}
+				       2 & -2 & 1  \\
+				       2 & 1  & -2 \\
+				       1 & 2  & 2\end{pmatrix} \) 是正交矩阵.
+		 \end{enumerate}
+
+	 \paragraph{} %7
+		 \( \beta_{1} = \alpha_{1} =
+		 \begin{pmatrix}
+			 1 \\
+			 0 \\
+			 1\end{pmatrix} \)
+
+		 \( \beta_{2} = \alpha_{2} - \frac{(\alpha_{2}, \beta_{1})}{(\beta_{1}, \beta_{1})} \beta_{1} =
+		 \begin{pmatrix}
+			 0 \\
+			 1 \\
+			 -1\end{pmatrix} + \frac{1}{2}
+		 \begin{pmatrix}
+			 1 \\
+			 0 \\
+			 1\end{pmatrix} = \frac{1}{2}
+		 \begin{pmatrix}
+			 1 \\
+			 2 \\
+			 -1\end{pmatrix} \)
+
+		 \( \beta_{3} = \alpha_{3} - \dfrac{(\alpha_{3}, \beta_{1})}{(\beta_{1}, \beta_{1})} \beta_{1} - \frac{(\alpha_{3}, \beta_{2})}{(\beta_{2}, \beta_{2})} \beta_{2} =
+		 \begin{pmatrix}
+			 2 \\
+			 1 \\
+			 0\end{pmatrix} -
+		 \begin{pmatrix}
+			 1 \\
+			 0 \\
+			 1\end{pmatrix} - \dfrac{2}{3}
+		 \begin{pmatrix}
+			 1 \\
+			 2 \\
+			 -1
+		 \end{pmatrix} = \dfrac{1}{3}
+		 \begin{pmatrix}
+			 1  \\
+			 -1 \\
+			 -1\end{pmatrix} \)
+
+
+ \subsection{} %B
+
+	 \paragraph{} %1
+		 设 \( \alpha_{3} = (x, y, z)^{\mathrm{T}} \), 则 \( \begin{cases} x + 2y + 2z = 0 \\ -2x + y = 0 \end{cases} \)
+
+		 由于 \( \begin{pmatrix} 1 & 2 & 2 \\ -2 & 1 & 0 \end{pmatrix} \to \begin{pmatrix} 1 & & \frac{2}{5} \\ & 1 & \frac{4}{5} \end{pmatrix} \),
+
+		 故可取 \( x = -\frac{2}{5}z \), \( y = -\frac{4}{5}z \)
+
+		 又由 \( x^{2} + y^{2} + z^{2} = 1 \)
+
+		 \(\Rightarrow \alpha_{3} = \pm \frac{1}{3\sqrt{5}} \begin{pmatrix} -2 \\ -4 \\ 5 \end{pmatrix} \)
+
+	 \paragraph{} %2
+		 因 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{s} \) 中有 \( r_{1} \) 个向量线性无关,
+
+		 \quad \   \( \beta_{1}, \beta_{2}, \cdots, \beta_{t} \) 中有 \( r_{2} \) 个向量线性无关,
+
+		 则整体组中的线性无关的向量个数一定大于 \( r_{1} \) 与 \( r_{2} \) 中的较大者.
+
+		 又因 \( \forall \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r_{1}}, \alpha_{r_{1}+1} \) 线性相关,
+
+		 则 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r_{1}}, \alpha_{r_{1}+1}, \beta_{1}, \beta_{2}, \cdots, \beta_{r_{2}} \) 也必然线性相关,
+
+		 故秩 \( r < r_{1} + r_{2} + 1 \),
+
+		 综上, \( \max\{r_{1}, r_{2}\} \leq r_3 \leq r_{1} + r_{2} \).
+
+	 \paragraph{} %3
+		 设 \( k_{1}\alpha_{1} + k_{2}\alpha_{2} + k_{3}\alpha_{3} + k_{4}\beta = 0 \)
+
+		 则 \(k_{4}\beta^{2} = 0 \), 从而有 \( k_{4} = 0 \).
+
+		 又 \( \alpha_{1}, \alpha_{2}, \alpha_{3} \) 线性无关, \( \therefore k_{1} = k_{2} = k_{3} = 0 \)
+
+		 故 \( \alpha_{1}, \alpha_{2}, \alpha_{3}, \beta \) 线性无关.
+
+	 \paragraph{} %4
+		 依题意, 有 \( (\alpha_{1}, \alpha_{2}, \cdots, \alpha_{m}) \cdot \beta = 0 \)
+
+		 设 \(k_{1}\alpha_{1} + k_{2}\alpha_{2} + \cdots + k_{m}\alpha_{m} + k_{m+1}\beta = 0\)
+
+		 \(\begin{aligned}
+			  & \Rightarrow k_{1}\alpha_{1}\beta + k_{2}\alpha_{2}\beta + \cdots + k_{m}\alpha_{m}\beta + k_{m+1}\beta^{2} = 0 \\
+			  & \Rightarrow k_{m+1}\beta^{2} = 0                                                                               \\
+			  & \Rightarrow k_{m+1} = 0
+		 \end{aligned}\)
+
+		 又 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{m} \) 线性无关, 则 \( k_{1} = k_{2} = \cdots = k_{m} = 0 \)
+
+		 从而 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{m}, \beta \) 线性无关.
+
+
+ \subsection{} %C
+
+
+	 \paragraph{} %1
+		 证明: {\bf 必要性}: 设 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 线性无关, \( \alpha \) 是任意一个 \( n \) 维向量.
+
+		 \( \because n+1 \) 个 \( n \) 维向量必线性相关,
+
+		 故 \( \alpha \) 可以由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 线性表示.
+
+		 {\bf 充分性}: 设任何一个 \( n \) 维向量可由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 线性表示.
+
+		 故 \( e_{1} = (1, 0, \cdots, 0) \), \( e_{2} = (0, 1, \cdots, 0) \), \( \cdots \), \( e_{n} = (0, 0, \cdots, 1) \) 能被 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 表示.
+
+		 又 \( e_{1}, e_{2}, \cdots, e_{n} \) 这组向量可以表示任何 \( n \) 维向量, 故 \( e_{1}, e_{2}, \cdots, e_{n} \) 与 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 等价,
+
+		 所以 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 线性无关.
+
+
+	 \paragraph{} %2
+		 证明: 设 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{s} \) 是某一向量组中的线性无关部分组.
+
+		 在向量组考虑向量 \( \beta \), 若 \( \beta \) 可由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{s} \) 表示, 则放弃此向量,
+
+		 否则将 \( \beta \) 添加至 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{s} \), 即 \( \alpha_{s+1} = \beta \).
+
+		 如此遍历下去, 遍历整个原向量组, 使得扩充的部分组 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 满足:
+
+		 \setlength{\parindent}{2em}
+		 (1) 线性无关,
+
+		 (2) 原向量组中任一向量都可以由此部分组表示,
+
+		 \setlength{\parindent}{0pt}
+		 则该部分组即扩充为了一个极大线性无关组.
+
+
+	 \paragraph{} %3
+		 证明: 当 \( s \leq m - r \) 时,
+
+		 \( \because r(\alpha_{k_{1}}, \alpha_{k_{2}}, \cdots, \alpha_{k_{s}}) > 0 \geq r + s - m \)
+
+		 此时成立.
+
+		 当 \( s > m - r \) 时, 则设 \( \alpha_{j_{1}}, \alpha_{j_{2}}, \cdots, \alpha_{j_{r}} \) 为一个极大线性无关组.
+
+		 则 \( s \) 个向量中必有 \( s + r - m \) 个向量 \( \alpha_{i_1}, \alpha_{i_2}, \cdots, \alpha_{i_{(s+r-m)}} \) 属于极大线性无关组, 故
+		 \begin{align*}
+			 r(\alpha_{k_{1}}, \alpha_{k_{2}}, \dots, \alpha_{k_{s}}) & = r(\alpha_{i_{1}}, \alpha_{i_{2}}, \dots, \alpha_{i_{(s+r-m)}} + \alpha_{k_{i}} + \cdots) \\
+			                                                          & > r(\alpha_{i_{1}}, \alpha_{i_{2}}, \dots, \alpha_{i_{(s+r-m)}}) = s + r - m
+		 \end{align*}
+
+		 综上, 向量组B的秩大于等于 \( r - (m - s) \).
+
+
+\section{3.4}
+
+ \paragraph{} %4
+	 基可取 \( \alpha_{1} = 1 \), \( \alpha_{2} = i \)
+
+	 若 \( k_{1}\alpha_{1} + k_{2}\alpha_{2} = 0 \) 则 \( k_{1} = 0 \), \( k_{2} = 0 \), 故 \( \alpha_{1}, \alpha_{2} \) 是该空间的一组基.
+
+	 维数为2.
+
+
+ \paragraph{} %5
+	 设 \( \alpha_{1} = \begin{pmatrix} 0 & 1 & 0 \\ -1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} \), \( \alpha_{2} = \begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0 \end{pmatrix} \), \( \alpha_{3} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & -1 & 0 \end{pmatrix} \)
+
+	 则若 \( k_{1}\alpha_{1} + k_{2}\alpha_{2} + k_{3}\alpha_{3} = 0 \), 即 \( \begin{pmatrix} 0 & k_{1} & k_{2} \\ -k_{1} & 0 & k_{3} \\ -k_{2} & -k_{3} & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} \)
+
+	 则 \( k_{1} = k_{2} = k_{3} = 0 \), 从而 \( \alpha_{1}, \alpha_{2}, \alpha_{3} \) 线性无关.
+
+	 所以 \( \alpha_{1}, \alpha_{2}, \alpha_{3} \) 是该空间的一组基.
+
+	 维数为3.
+
+
+ \paragraph{} %6
+	 定义A的一个部分组 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 满足:
+
+	 \setlength{\parindent}{2em}
+	 (1) 向量组 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 线性无关
+
+	 (2) 向量组A的任意向量可以由 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 线性表示,
+
+	 \setlength{\parindent}{0pt}
+	 则称 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 为A的一个极大线性无关组.
+
+	 极大线性无关组所含个数称为A的秩.
+
+
+ \paragraph{} %7
+	 假设对于一向量有
+	 \[ A = x_{1}A_{1} + x_{2}A_{2} + \cdots + x_{n}A_{n} \tag{1} \]
+	 \[ A = y_{1}A_{1} + y_{2}A_{2} + \cdots + y_{n}A_{n} \tag{2} \]
+
+	 则 \((1)-(2)\) 有
+	 \[ (x_{1} - y_{1})A_{1} + (x_{2} - y_{2})A_{2} + \cdots + (x_{n} - y_{n})A_{n} = 0 \]
+
+	 由于 \( A_{1}, A_{2}, \cdots, A_{n} \) 线性无关, 故
+	 \( \begin{pmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{n} \end{pmatrix} = \begin{pmatrix} y_{1} \\ y_{2} \\ \vdots \\ y_{n} \end{pmatrix}, \) 故坐标唯一.
+
+
+ \paragraph{} %8
+	 若有 \( m \) 阶矩阵 \( \boldsymbol{P} = (p_{ij}) \), 使
+	 \[ (\beta_{1}, \beta_{2}, \cdots, \beta_{m}) = (\alpha_{1}, \alpha_{2}, \cdots, \alpha_{m}) \begin{pmatrix} p_{11} & p_{12} & \cdots & p_{1m} \\ p_{21} & p_{22} & \cdots & p_{2m} \\ \vdots & \vdots & \ddots & \vdots \\ p_{m1} & p_{m2} & \cdots & p_{mm} \end{pmatrix} \]
+
+	 则称 \(\boldsymbol{P}\) 为基 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{m} \) 到基 \( \beta_{1}, \beta_{2}, \cdots, \beta_{m} \) 的过渡矩阵.
+
+	 若 \( \alpha \) 在基 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{m} \) 下坐标为 \( x_{1}, x_{2}, \cdots, x_{m} \), 在基 \( \beta_{1}, \beta_{2}, \cdots, \beta_{m} \) 下坐标为 \( y_{1}, \cdots, y_{m} \).
+
+	 则
+	 \[ \begin{pmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{m} \end{pmatrix} = \begin{pmatrix} p_{11} & p_{12} & \cdots & p_{1m} \\ p_{21} & p_{22} & \cdots & p_{2m} \\ \vdots & \vdots & \ddots & \vdots \\ p_{m1} & p_{m2} & \cdots & p_{mm} \end{pmatrix} \begin{pmatrix} y_{1} \\ y_{2} \\ \vdots \\ y_{m} \end{pmatrix} \]
+
+
+\section{3.5}
+ \subsection{} %A
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       \( \begin{pmatrix}
+				       1 & 2 & -3 & 4 \\
+				       2 & 4 & -6 & 8
+			       \end{pmatrix} \to
+			       \begin{pmatrix}
+				       1 & 2 & -3 & 4 \\
+				       0 & 0 & 0  & 0
+			       \end{pmatrix} \)
+
+			       故秩 \( r = 1 \)
+			 \item %(2)
+			       \( \begin{pmatrix}
+				       2 & -1 & 3 & -2 & 4 \\
+				       4 & -2 & 5 & 1  & 7 \\
+				       2 & -1 & 1 & 8  & 2
+			       \end{pmatrix} \to
+			       \begin{pmatrix}
+				       1 & -\frac{1}{2} & 0 & \frac{13}{2} & \frac{1}{2} \\
+				         &              & 1 & -5           & 1           \\
+				         &              &   &              &
+			       \end{pmatrix} \),
+
+			       故秩 \( r = 2 \)
+			 \item %(3)
+			       \( \begin{pmatrix}
+				       3 & 2  & -1 & -3 & -1 \\
+				       2 & -1 & 3  & 1  & -3 \\
+				       2 & 0  & 5  & 1  & 8  \\
+				       5 & 1  & 2  & -2 & -4
+			       \end{pmatrix} \to
+			       \begin{pmatrix}
+				       1 & 0 & 0 & -\frac{2}{5}   & -\frac{3}{5} \\
+				         & 1 & 0 & -\frac{18}{25} & \frac{27}{5} \\
+				         &   & 1 & \frac{9}{25}   & \frac{14}{5} \\
+				         &   &   &                &
+			       \end{pmatrix} \)
+
+			       故秩 \( r = 3 \)
+		 \end{enumerate}
+
+
+	 \paragraph{} %2
+		 \begin{enumerate}
+			 \item %(1)
+			       \( \begin{pmatrix}
+				       1  & 3 & 0  & 2 & 2  \\
+				       -1 & 0 & 3  & 1 & -2 \\
+				       2  & 7 & 1  & 5 & 4  \\
+				       4  & 4 & -8 & 6 & 8
+			       \end{pmatrix} \to
+			       \begin{pmatrix}
+				       1 & 0 & -3 & 0 & 2 \\
+				         & 1 & 1  & 0 & 0 \\
+				         &   &    & 1 & 0 \\
+				         &   &    &   &
+			       \end{pmatrix} \) 秩为 3
+
+			       则极大线性无关组可取 \( \alpha_{1}, \alpha_{2}, \alpha_{4} \), 且有
+			       \[
+				       \alpha_{3} = -3\alpha_{1} + \alpha_{2}, \quad \alpha_{5} = 2\alpha_{1}
+			       \]
+
+			 \item %(2)
+			       \( \begin{pmatrix}
+				       1 & 2 & 3  & 1 & 3  \\
+				       1 & 3 & 4  & 2 & 2  \\
+				       2 & 7 & 9  & 3 & 7  \\
+				       3 & 7 & 10 & 2 & 12
+			       \end{pmatrix} \to \begin{pmatrix}
+				       1 & 0 & 1 & 0 & 3  \\
+				         & 1 & 1 & 0 & 1  \\
+				         &   &   & 1 & -2 \\
+				         &   &   &
+			       \end{pmatrix} \)
+
+			       则秩为 3. \( \alpha_{1}, \alpha_{2}, \alpha_{4} \) 是一个极大无关组, 且
+			       \[
+				       \alpha_{3} = \alpha_{1} + \alpha_{2}, \quad \alpha_{5} = 3\alpha_{1} + \alpha_{2} - 2\alpha_{4}
+			       \]
+		 \end{enumerate}
+
+
+	 \paragraph{} %3
+		 \begin{enumerate}
+			 \item %(1)
+			       由 \( \begin{vmatrix}
+				       1 & -1 & -2 & 3 \\
+				       1 & -3 & -5 & 2 \\
+				       1 & 1  & a  & 4 \\
+				       1 & 7  & 10 & 7
+			       \end{vmatrix} = 0 \Rightarrow a = 1 \), 又由 \( \begin{vmatrix}
+				       1 & -1 & 3 & 0  \\
+				       1 & -3 & 2 & -1 \\
+				       1 & 1  & 4 & 1  \\
+				       1 & 7  & 7 & b
+			       \end{vmatrix} = 0 \Rightarrow b = 4 \)
+			 \item %(2)
+			       \( \begin{pmatrix}
+				       1 & -1 & -2 & 3 & 0  \\
+				       1 & -3 & -5 & 2 & -1 \\
+				       1 & 1  & 1  & 4 & 1  \\
+				       1 & 7  & 10 & 7 & 4
+			       \end{pmatrix}
+			       \to \begin{pmatrix}
+				       1 & 0 & -\frac{1}{2} & \frac{7}{2} & \frac{1}{2} \\
+				         & 1 & \frac{3}{2}  & \frac{1}{2} & \frac{1}{2} \\
+				         &   &              &             &
+			       \end{pmatrix} \)
+
+			       故 \( \alpha_{1}, \alpha_{2} \) 是一个极大无关组,
+			       \[ \alpha_{3} = -\frac{1}{2}\alpha_{1} + \frac{3}{2}\alpha_{2}, \quad \alpha_{4} = \frac{7}{2}\alpha_{1} + \frac{1}{2}\alpha_{2}, \quad \alpha_{5} = \frac{1}{2}\alpha_{1} + \frac{1}{2}\alpha_{2}. \]
+		 \end{enumerate}
+
+	 \paragraph{} %4
+		 \begin{enumerate}
+			 \item %(1)
+			       由 \( \begin{pmatrix} 1 & 3 & a & 7 \\ -1 & 2 & 3 & 8 \\ 2 & -1 & 0 & b \\ 0 & 1 & 2 & 3 \end{pmatrix} \to \begin{pmatrix} 1 & 3 & a & 7 \\ & 1 & \frac{3+a}{5} & 3 \\ & & 14-2a & 7+b \\ & & \frac{7-a}{5} &0 \end{pmatrix} \)
+
+			       以及秩为 2 知
+			       \[ \begin{cases} 14 - 2a = 0 \\ 7 + b = 0 \\ \frac{7 - a}{5} = 0 \end{cases} \Rightarrow \begin{cases} a = 7 \\ b = -7 \end{cases} \]
+			 \item %(2)
+			       由 \( \begin{pmatrix} 1 & 3 & 7 & 7 \\ -1 & 2 & 3 & 8 \\ 2 & -1 & 0 & -7 \\ 0 & 1 & 2 & 3 \end{pmatrix} \to \begin{pmatrix} 1 &0 & 1 & -2 \\ & 1 & 2 & 3 \\ &  &  & \end{pmatrix} \)
+
+			       则 \( \alpha_{1}, \alpha_{2} \) 是一个极大无关组, \( \alpha_{3} = \alpha_{1} + 2\alpha_{2} \), \( \alpha_{4} = -2\alpha_{1} + 3\alpha_{2} \).
+			 \item %(3)
+			       由于任何两列都线性无关, 故有 \( C_{4}^{2} = 6 \) 个极大无关组.
+		 \end{enumerate}
+
+
+	 \paragraph{} %5
+		 \begin{enumerate}
+			 \item %(1)
+			       错误. 如 \( A = \begin{pmatrix}
+				       1 &   &   &   \\
+				         & 1 &   &   \\
+				         &   & 0     \\
+				         &   &   & 0
+			       \end{pmatrix} \)
+			 \item %(2)
+			       正确. 若A的所有 \(r-1\) 阶子式均为0, 则秩 \( r^{*} < r - 1 \), 矛盾.
+			 \item %(3)
+			       正确. 若存在 \(r+1\) 阶子式不为零, 则秩 \( r^{*} \geq r + 1 \), 矛盾.
+			 \item %(4)
+			       错误. 如 \( A = \begin{pmatrix}
+				       1 &   &   &   \\
+				         & 1 &   &   \\
+				         &   & 0     \\
+				         &   &   & 0
+			       \end{pmatrix} \)
+			 \item %(5)
+			       错误. 如 \( A = \begin{pmatrix}
+				       1 &   &   &   \\
+				         & 1 &   &   \\
+				         &   & 0     \\
+				         &   &   & 0
+			       \end{pmatrix} \)
+			 \item %(6)
+			       正确. 若存在 \(r\) 阶子式不为零, 则秩 \( r^{*} \geq r \) 的逆否命题即该命题.
+
+			       或者用反证法: 若秩 \( r^{*} \geq r \), 则存在一个 \(r\) 阶子式不为零, 矛盾!
+		 \end{enumerate}
+
+
+	 \paragraph{} %6
+		 由 \( r(AB) = m \leq \min\left\{ r(A), r(B) \right\} \leq r(B) \)
+
+		 知 \(B\) 的列向量组的秩 \( r(\beta_{1}, \beta_{2}, \cdots, \beta_{m}) \geq m \)
+
+		 故 \(B\) 的列向量组线性无关.
+
+
+	 \paragraph{} %7
+		 依题意, \( (\alpha_{1}, \alpha_{2}, \cdots, \alpha_{n})x = 0 \) 只有零解, 则 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n} \) 线性无关.
+
+		 故 \( r(A) = r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{n}) = n \)
+
+
+ \subsection{} %B
+
+
+	 \paragraph{} %1
+		 \( A = \begin{pmatrix}
+			 1 & \lambda & -1      & 2 \\
+			 2 & -1      & \lambda & 5 \\
+			 1 & 10      & -6      & 1
+		 \end{pmatrix} \xrightarrow{\text{初等行变换}} \begin{pmatrix}
+			 1 & \lambda     & -1        & 2 \\
+			   & -1-2\lambda & \lambda+2 & 1 \\
+			   & 9-3\lambda  & \lambda-3 & 0
+		 \end{pmatrix} \)
+
+		 故当 \( \lambda = 3 \) 时, \( r(A) = 2 \)
+
+		 当 \( \lambda \neq 3 \) 时, \( r(A) = 3 \).
+
+
+	 \paragraph{} %2
+		 由于 \( A \) 是秩为1的 \( m \times n \) 矩阵, 则存在可逆矩阵 \( P, Q \), 使
+		 \[ A = P \cdot \begin{pmatrix}
+				 1                 \\
+				  & 0              \\
+				  &   & \ddots     \\
+				  &   &        & 0
+			 \end{pmatrix}_{m \times n}\cdot  Q \]
+
+		 则 \( A = P \cdot \begin{pmatrix}
+			 1      \\
+			 0      \\
+			 \vdots \\
+			 0
+		 \end{pmatrix}_{m \times 1} \cdot \begin{pmatrix}
+			 1 & 0 & \cdots & 0
+		 \end{pmatrix}_{1 \times n} \cdot Q \)
+
+		 故取 \( \alpha = P \cdot \begin{pmatrix}
+			 1      \\
+			 0      \\
+			 \vdots \\
+			 0
+		 \end{pmatrix}_{m \times 1} \quad \beta^{T} = \begin{pmatrix}
+			 1 & 0 & \cdots & 0
+		 \end{pmatrix}_{1 \times n} Q \) 即证.
+
+
+	 \paragraph{} %3
+		 \textbf{必要性}: 若 \( r(A) = r(B) \), 则
+		 \[ r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{n}) = r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{s-1}, \alpha_{s+1}, \dots, \alpha_{n}) \leq n-1 \]
+		 故 \( \alpha_{1}, \alpha_{2}, \dots, \alpha_{n} \) 线性相关,
+
+		 即所划去的行可用其余的行线性表示.
+
+		 \textbf{充分性}: 若所划去的行可由其余的行线性表示, 则 \( r(B) \leq r(A) \)
+
+		 又 \[ r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{n}) \geq r(\alpha_{1}, \alpha_{2}, \dots, \alpha_{s-1}, \alpha_{s+1}, \dots, \alpha_{n}) \]
+
+		 则 \( B \) 中的极大无关组也是 \( A \) 中的极大无关组,
+
+		 故 \( r(B) = r(A) \).
+
+
+	 \paragraph{} %4
+		 记 \( r(A) = r \). 若 \( s < m-r \), 则 \( r(B) \geq 0 > s+r-m \), 成立.
+
+		 若 \( s \geq m-r \), 设 \( \alpha_{i_{1}}, \alpha_{i_{2}}, \dots, \alpha_{i_{r}} \) 是 \( A \) 中行向量组的一个极大无关组,
+
+		 则 \( B \) 中必可取到 \( \alpha_{i_{1}}, \alpha_{i_{2}}, \dots, \alpha_{i_{r}} \) 中的 \( s+r-m \) 个元素 \( \alpha_{k_{1}}, \alpha_{k_{2}}, \dots, \alpha_{k_{(s+r-m)}} \)
+
+		 故 \( r(B) \geq r(\alpha_{k_{1}}, \alpha_{k_{2}}, \dots, \alpha_{k_{(s+r-m)}}) = s+r-m \)
+
+		 综上, \( r(B) \geq r(A) + s - m \).
+
+
+ \subsection{} %C
+
+
+	 \paragraph{} %1
+		 证明: 由 \( r\begin{pmatrix} A & O \\ E & B \end{pmatrix} \geq r\begin{pmatrix} A & O \\ O & B \end{pmatrix} = r(A) + r(B) \)
+
+		 又 \(
+		 \begin{pmatrix}
+			 A & O \\
+			 E & B
+		 \end{pmatrix} \xrightarrow{r_{1}-A r_{2}}
+		 \begin{pmatrix}
+			 O & -AB \\
+			 E & B
+		 \end{pmatrix} \xrightarrow{c_{2}+B c_{1}}
+		 \begin{pmatrix}
+			 O & -AB \\
+			 E & O
+		 \end{pmatrix} \to
+		 \begin{pmatrix}
+			 AB & O \\
+			 O  & E
+		 \end{pmatrix} \)
+
+		 故 \( r(AB) + r(E) = r\begin{pmatrix}
+			 AB & O \\
+			 O  & E
+		 \end{pmatrix} = r\begin{pmatrix}
+			 A & O \\
+			 E & B
+		 \end{pmatrix} \geq r(A) + r(B) \)
+
+		 即 \( r(AB) \geq r(A) + r(B) - n \).
+
+
+	 \paragraph{} %2
+		 \textbf{必要性}: 设 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 线性无关.
+
+		 \( (\beta_{1}, \beta_{2}, \cdots, \beta_{r}) = (\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r})C \)
+
+		 且 \( \beta_{1}, \beta_{2}, \cdots, \beta_{r} \) 线性无关, 则
+		 \[
+			 (\beta_{1}, \beta_{2}, \cdots, \beta_{r})\begin{pmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{r} \end{pmatrix} = (\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r})C\begin{pmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{r} \end{pmatrix} = 0, \text{当且仅当 } C\begin{pmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{r} \end{pmatrix} = 0  \text{ 且 } \begin{pmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{r} \end{pmatrix} = 0 \]
+
+		 即齐次线性方程组 \( CX=0 \) 只有零解, 于是 \( |C| \neq 0 \)
+
+		 \textbf{充分性}: 若 \( |C| \neq 0 \), 则
+		 \[
+			 (\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}) = (\beta_{1}, \beta_{2}, \cdots, \beta_{r})C^{-1}
+		 \]
+		 即 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 可以由 \( \beta_{1}, \beta_{2}, \cdots, \beta_{r} \) 线性表示.
+
+		 故 \( \alpha_{1}, \alpha_{2}, \cdots, \alpha_{r} \) 与 \( \beta_{1}, \beta_{2}, \cdots, \beta_{r} \) 等价, 于是
+		 \[
+			 r(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{r}) = r(\beta_{1}, \beta_{2}, \cdots, \beta_{r}) = r
+		 \]
+		 故 \( \beta_{1}, \beta_{2}, \cdots, \beta_{r} \) 线性无关.
+
+
+	 \paragraph{} %3
+		 令 \( K = \begin{pmatrix} a_{11} & \cdots & a_{1r} & \cdots & a_{1s} \\ \vdots & & \vdots & & \vdots \\ a_{n1} & \cdots & a_{nr} & \cdots & a_{ns} \end{pmatrix} \), 设 \( r(K) = r \leq \min(n,s) \)
+
+		 不失一般性, 不妨设 \( K \) 前 \( r \) 列是极大线性无关组, 则
+		 \[ \begin{cases} \beta_{1} = a_{11}\alpha_{1} + \cdots + a_{n1}\alpha_{n} \\ \cdots \\ \beta_{r} = a_{1r}\alpha_{1} + \cdots + a_{nr}\alpha_{n} \\ \cdots \\ \beta_{s} = a_{1s}\alpha_{1} + \cdots + a_{ns}\alpha_{n} \end{cases} \]
+
+		 下面证明 \( \beta_{1}, \beta_{2}, \cdots, \beta_{r} \) 是极大线性无关组.
+
+		 设 \( k_{1}\beta_{1} + k_{2}\beta_{2} + \cdots + k_{r}\beta_{r} = 0 \Rightarrow (k_{1}a_{11} + k_{2}a_{12} + \cdots + k_{r}a_{1r})\alpha_{1} + \cdots + (k_{1}a_{n1} + \cdots + k_{r}a_{nr})\alpha_{n} = 0 \)
+
+		 则 \( \begin{cases} a_{11}k_{1} + a_{12}k_{2} + \cdots + a_{1r}k_{r} = 0 \\ \cdots \\ a_{n1}k_{1} + a_{n2}k_{2} + \cdots + a_{nr}k_{r} = 0 \end{cases} \)
+
+		 该方程组系数矩阵秩为 \( r \), 故只有零点 \( k_{1}=k_{2}=\cdots=k_{r}=0 \),
+
+		 故 \( \beta_{1}, \beta_{2}, \cdots, \beta_{r} \) 线性无关.
+
+		 其次, 任意添加一个向量 \( \beta_{j} \) 后, 方程组的秩 \( r < r+1 \), 则有非零解, 即线性相关.
+
+		 故向量组 \( \beta_{1}, \beta_{2}, \cdots, \beta_{s} \) 的秩等于 \( K \) 的秩,
+
+		 故 \( \beta_{1}, \cdots, \beta_{s} \) 线性无关 \( \Leftrightarrow r(K)=s \).

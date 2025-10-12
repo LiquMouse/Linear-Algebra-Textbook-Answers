@@ -1,0 +1,612 @@
+\section{6.1}
+
+ \subsection{} %A
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       \( \begin{pmatrix}
+				       2  & -2 \\
+				       -2 & 5
+			       \end{pmatrix} \) 由 \( \begin{pmatrix}
+				       2  & -2 \\
+				       -2 & 5
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 &   \\
+				         & 1
+			       \end{pmatrix} \) 知秩为2
+			 \item %(2)
+			       \( \begin{pmatrix}
+				       1  & -2 & -4 \\
+				       -2 & -2 & 3  \\
+				       -4 & 3  & 3
+			       \end{pmatrix} \) 由 \( \begin{pmatrix}
+				       1  & -2 & -4 \\
+				       -2 & -2 & 3  \\
+				       -4 & 3  & 3
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 &   &   \\
+				         & 1 &   \\
+				         &   & 1 \\
+			       \end{pmatrix} \) 知秩为3.
+			 \item %(3)
+			       \( \begin{pmatrix}
+				       1 & 2 & 3 \\
+				       2 & 4 & 6 \\
+				       3 & 6 & 9
+			       \end{pmatrix} \) 由 \( \begin{pmatrix}
+				       1 & 2 & 3 \\
+				       2 & 4 & 6 \\
+				       3 & 6 & 9
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 2 & 3 \\
+				         &   &   \\
+				         &   &
+			       \end{pmatrix} \) 知秩为1
+			 \item %(4)
+			       \( \begin{pmatrix}
+				       0 & 1 & 0 & 1 \\
+				       1 & 0 & 1 & 0 \\
+				       0 & 1 & 0 & 1 \\
+				       1 & 0 & 1 & 0
+			       \end{pmatrix} \) 由 \( \begin{pmatrix}
+				       0 & 1 & 0 & 1 \\
+				       1 & 0 & 1 & 0 \\
+				       0 & 1 & 0 & 1 \\
+				       1 & 0 & 1 & 0
+			       \end{pmatrix} \rightarrow
+			       \begin{pmatrix}
+				       1 &   & 1 &   \\
+				         & 1 &   & 1 \\
+				         &   &   &   \\
+				         &   &   &   \\
+			       \end{pmatrix} \) 知秩为2
+			 \item %(5)
+			       \( \begin{pmatrix}
+				       1  & -1 & -1 & -1 \\
+				       -1 & 1  & -1 & -1 \\
+				       -1 & -1 & 1  & -1 \\
+				       -1 & -1 & -1 & 1
+			       \end{pmatrix} \) 由 \(
+			       \begin{pmatrix}
+				       1  & -1 & -1 & -1 \\
+				       -1 & 1  & -1 & -1 \\
+				       -1 & -1 & 1  & -1 \\
+				       -1 & -1 & -1 & 1
+			       \end{pmatrix} \rightarrow
+			       \begin{pmatrix}
+				       1 &   &   &   \\
+				         & 1 &   &   \\
+				         &   & 1 &   \\
+				         &   &   & 1 \\
+			       \end{pmatrix} \) 知秩为4.
+		 \end{enumerate}
+
+
+	 \paragraph{} %2
+		 \begin{enumerate}
+			 \item %(1)
+			       \( 3x_{2}^{2} - 4x_{1}x_{2} \)
+			 \item %(2)
+			       \( 7x_{1}^{2} + 5x_{2}^{2} + 8x_{1}x_{2} \)
+			 \item %(3)
+			       \( -x_{1}^{2} + 2x_{2}^{2} - 3x_{3}^{2} + 8x_{1}x_{2} + 12x_{1}x_{3} - 10x_{2}x_{3} \)
+			 \item %(4)
+			       \( -6x_{1}^{2} + 7x_{2}^{2} - 2x_{3}^{2} + 6x_{1}x_{2} \)
+			 \item %(5)
+			       \( x_{1}^{2} + x_{2}^{2} - 2x_{3}^{2} - 2x_{4}^{2} + 4x_{1}x_{2} - 2x_{3}x_{4} \)
+			 \item %(6)
+			       \( x_{1}^{2} + x_{2}^{2} + x_{3}^{2} + x_{4}^{2} + 2x_{1}x_{2} + 2x_{1}x_{3} + 2x_{1}x_{4} + 2x_{2}x_{3} + 2x_{2}x_{4} + 2x_{3}x_{4} \)
+		 \end{enumerate}
+
+
+ \subsection{} %B
+
+
+	 \paragraph{} %1
+		 证明: 必要性: 由 \( A = O \), 则必有 \( \alpha^{\mathrm{T}}A\alpha = 0 \)
+
+		 充分性: 设 \( A = (a_{ij})_{n \times n} \), 则 \( X = (x_{1}, x_{2}, \dots, x_{n})^{\mathrm{T}} \),
+
+		 由 \( X^{\mathrm{T}}AX = 0 \), 取 \( X \) 为 \( \varepsilon_{1} = (1, 0, 0, \dots, 0)^{\mathrm{T}} \), \( \varepsilon_{2} = (0, 1, \dots, 0)^{\mathrm{T}} \), ..., \( \varepsilon_{n} = (0, 0, \dots, 1)^{\mathrm{T}} \).
+
+		 代入 \( X^{\mathrm{T}}AX = 0 \Rightarrow a_{11} = 0, a_{22} = 0, \dots, a_{nn} = 0 \).
+
+		 又取 \( X \) 为 \( \varepsilon_{i} + \varepsilon_{j} = (0, 0, \dots, 1, 0, \dots, 1, \dots, 0)^{\mathrm{T}} \),
+
+		 代入 \( X^{\mathrm{T}}AX = 0 \), 可以得到 \( a_{ij} = 0 \) (\( i \neq j \), \( i, j = 1, 2, \dots, n \)).
+
+		 则 \( A = O \).
+
+
+	 \paragraph{} %2
+		 证明: 必要性: 由 \( A^{\mathrm{T}} = -A \), 则 \( (X^{\mathrm{T}}AX)^{\mathrm{T}} = X^{\mathrm{T}}A^{\mathrm{T}}X = -X^{\mathrm{T}}AX \),
+
+		 又 \( X^{\mathrm{T}}AX \) 是一个数, 于是 \( (X^{\mathrm{T}}AX)^{\mathrm{T}} = X^{\mathrm{T}}AX \),
+
+		 则 \( X^{\mathrm{T}}AX = 0 \).
+
+		 充分性: 设 \( X^{\mathrm{T}}AX = 0 \), 取 \( X \) 为 \( \varepsilon_{1} = (1, 0, \dots, 0)^{\mathrm{T}} \), \( \varepsilon_{2} = (0, 1, \dots, 0)^{\mathrm{T}} \), ..., \( \varepsilon_{n} = (0, 0, \dots, 1)^{\mathrm{T}} \),
+
+		 代入 \( X^{\mathrm{T}}AX = 0 \Rightarrow a_{11} = 0, a_{22} = 0, \dots, a_{nn} = 0. \)
+		 又取 \( X = \varepsilon_{i} + \varepsilon_{j} \) (\( i \neq j \)),
+
+		 代入 \( X^{\mathrm{T}}AX = 0 \) 有 \( X^{\mathrm{T}}AX = (\varepsilon_{i} + \varepsilon_{j})A(\varepsilon_{i} + \varepsilon_{j})^{\mathrm{T}} = a_{ij} + a_{ji} = 0 \)
+		 故 \( a_{ij} = -a_{ji} \), 从而 \( A \) 为反对称矩阵.
+
+
+\section{6.2}
+
+ \subsection{} %A
+
+
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       \( A = \begin{pmatrix}
+				       2  & -2 & 0  \\
+				       -2 & 1  & -2 \\
+				       0  & -2 & 0
+			       \end{pmatrix} \),
+
+			       则 \( f_{A}(\lambda) = |\lambda E - A| = \begin{vmatrix}
+				       \lambda - 2 & 2           & 0       \\
+				       2           & \lambda - 1 & 2       \\
+				       0           & 2           & \lambda
+			       \end{vmatrix} = (\lambda + 2)(\lambda - 1)(\lambda - 4) \),
+
+			       \( \lambda =-2 \) 时, \( \begin{pmatrix}
+				       -4 & 2  & 0  \\
+				       2  & -3 & 2  \\
+				       0  & 2  & -2
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 0 & -\frac{1}{2} \\
+				       0 & 1 & -1           \\
+				       0 & 0 & 0
+			       \end{pmatrix}, \alpha_{1} = (1, 2, 2)^{\mathrm{T}} \);
+
+			       \( \lambda = 1 \) 时, \( \begin{pmatrix}
+				       -1 & 2 & 0 \\
+				       2  & 0 & 2 \\
+				       0  & 2 & 1
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 0 & 1           \\
+				       0 & 1 & \frac{1}{2} \\
+				       0 & 0 & 0
+			       \end{pmatrix} , \alpha_{2} = (2, 1, -2)^{\mathrm{T}} \);
+
+			       \( \lambda = 4 \) 时, \( \begin{pmatrix}
+				       2 & 2 & 0 \\
+				       2 & 3 & 2 \\
+				       0 & 2 & 4
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 0 & -2 \\
+				       0 & 1 & 2  \\
+				       0 & 0 & 0
+			       \end{pmatrix} , \alpha_{3} = (2, -2, 1)^{\mathrm{T}} \);
+
+			       正交单位化, 有 \( p_{1} = \left(\frac{1}{3}, \frac{2}{3}, \frac{2}{3}\right)^{\mathrm{T}} \), \( p_{2} = \left(\frac{2}{3}, \frac{1}{3}, -\frac{2}{3}\right)^{\mathrm{T}} \), \( p_{3} = \left(\frac{2}{3}, -\frac{2}{3}, \frac{1}{3}\right)^{\mathrm{T}}, \)
+
+			       标准形 \( y_{1}^{2} - 2y_{2}^{2} + 4y_{3}^{2} \), \( X = \begin{pmatrix}
+				       \frac{2}{3}  & \frac{1}{3} & \frac{2}{3}  \\
+				       \frac{1}{3}  & \frac{2}{3} & -\frac{2}{3} \\
+				       -\frac{2}{3} & \frac{2}{3} & \frac{1}{3}
+			       \end{pmatrix}Y \).
+			 \item %(2)
+			       \( A = \begin{pmatrix}
+				       1  & -2 & -4 \\
+				       -2 & 4  & -2 \\
+				       -4 & -2 & 1
+			       \end{pmatrix} \),
+
+			       则 \( f_{A}(\lambda) = |\lambda E - A| = \begin{vmatrix}
+				       \lambda - 1 & 2           & 4           \\
+				       2           & \lambda - 4 & 2           \\
+				       4           & 2           & \lambda - 1
+			       \end{vmatrix} = (\lambda + 4)(\lambda - 5)^{2} \),
+
+			       \( 5E - A = \begin{pmatrix}
+				       4 & 2 & 4 \\
+				       2 & 1 & 2 \\
+				       4 & 2 & 4
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & \frac{1}{2} & 1 \\
+				         &             &   \\
+				         &             &
+			       \end{pmatrix} \),
+
+			       得 \( \alpha_{1} = (1, -2, 0)^{\mathrm{T}} \), \( \alpha_{2} = (-1, 0, 1)^{\mathrm{T}} \);
+
+			       \( -4E - A = \begin{pmatrix}
+				       -5 & 2  & 4  \\
+				       2  & -8 & 2  \\
+				       4  & 2  & -5
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 &   & -1           \\
+				         & 1 & -\frac{1}{2} \\
+				         &   &
+			       \end{pmatrix} \),
+
+			       得 \( \alpha_{3} = (2, 1, 2)^{\mathrm{T}} \);
+
+			       正交单位化, 有 \[ p_{1} = \left(\frac{1}{\sqrt{5}}, 0, -\frac{1}{\sqrt{5}}\right)^{\mathrm{T}},
+				       \newline  p_{2} = \left(\frac{\sqrt{5}}{6}, -\frac{2\sqrt{5}}{3}, -\frac{\sqrt{5}}{6}\right)^{\mathrm{T}}, \newline p_{3} = \left(\frac{2}{3}, \frac{1}{3}, \frac{2}{3}\right), \]
+
+			       标准形 \( 5y_{1}^{2} + 5y_{2}^{2} - 4y_{3}^{2} \), \( X = \begin{pmatrix}
+				       \frac{1}{\sqrt{5}}  & \frac{\sqrt{5}}{6}   & \frac{2}{3} \\
+				       0                   & -\frac{2\sqrt{5}}{3} & \frac{1}{3} \\
+				       -\frac{1}{\sqrt{5}} & -\frac{\sqrt{5}}{6}  & \frac{2}{3}
+			       \end{pmatrix}Y \).
+			 \item %(3)
+			       \( A = \begin{pmatrix}
+				       0           & \frac{1}{2} & \frac{1}{2} \\
+				       \frac{1}{2} & 0           & \frac{1}{2} \\
+				       \frac{1}{2} & \frac{1}{2} & 0
+			       \end{pmatrix} \),
+
+			       则 \( f_{A}(\lambda) = |\lambda E - A| = \begin{vmatrix}
+				       \lambda      & -\frac{1}{2} & -\frac{1}{2} \\
+				       -\frac{1}{2} & \lambda      & -\frac{1}{2} \\
+				       -\frac{1}{2} & -\frac{1}{2} & \lambda
+			       \end{vmatrix} = (\lambda + \frac{1}{2})^{2}(\lambda - 1) \),
+
+			       \( -\frac{1}{2}E - A = \begin{pmatrix}
+				       -\frac{1}{2} & -\frac{1}{2} & -\frac{1}{2} \\
+				       -\frac{1}{2} & -\frac{1}{2} & -\frac{1}{2} \\
+				       -\frac{1}{2} & -\frac{1}{2} & -\frac{1}{2}
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 1 & 1 \\
+				         &   &   \\
+				         &   &
+			       \end{pmatrix}\),
+
+			       得 \(\alpha_{1} = (1, -1, 0)^{\mathrm{T}} \), \( \alpha_{2} = (1, 0, -1)^{\mathrm{T}} \);
+
+			       \( E - A = \begin{pmatrix}
+				       1            & -\frac{1}{2} & -\frac{1}{2} \\
+				       -\frac{1}{2} & 1            & -\frac{1}{2} \\
+				       -\frac{1}{2} & -\frac{1}{2} & 1
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 &   & -1 \\
+				         & 1 & -1 \\
+				         &   &
+			       \end{pmatrix}\),
+
+			       得 \(\alpha_{3} = (1, 1, 1)^{\mathrm{T}} \)
+
+			       则 \( p_{1} = \left(\frac{1}{\sqrt{2}}, 0, -\frac{1}{\sqrt{2}}\right)^{\mathrm{T}} \), \( p_{2} = \left(-\frac{1}{\sqrt{6}}, \frac{2}{\sqrt{6}}, -\frac{1}{\sqrt{6}}\right) \),\newline \( p_{3} = \left(\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}\right) \),
+
+			       标准形 \( -\frac{1}{2}y_{1}^{2} - \frac{1}{2}y_{2}^{2} + y_{3}^{2} \), \( X = \begin{pmatrix}
+				       -\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{6}} & \frac{1}{\sqrt{3}} \\
+				       0                   & \frac{2}{\sqrt{6}}  & \frac{1}{\sqrt{3}} \\
+				       -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{6}}  & \frac{1}{\sqrt{3}}
+			       \end{pmatrix}Y. \)
+
+			 \item %(4)
+			       \( A = \begin{pmatrix}
+				       0           & 0           & 0           & \frac{1}{2} \\
+				       0           & 0           & \frac{1}{2} & 0           \\
+				       0           & \frac{1}{2} & 0           & 0           \\
+				       \frac{1}{2} & 0           & 0           & 0
+			       \end{pmatrix} \),
+
+			       则 \( f_{A}(\lambda) = |\lambda E - A| = \begin{vmatrix}
+				       \lambda      & 0            & 0            & -\frac{1}{2} \\
+				       0            & \lambda      & -\frac{1}{2} & 0            \\
+				       0            & -\frac{1}{2} & \lambda      & 0            \\
+				       -\frac{1}{2} & 0            & 0            & \lambda
+			       \end{vmatrix} = (\lambda - \frac{1}{2})^{2}(\lambda + \frac{1}{2})^{2} \),
+
+			       \( \frac{1}{2}E - A = \begin{pmatrix}
+				       \frac{1}{2}  & 0            & 0            & -\frac{1}{2} \\
+				       0            & \frac{1}{2}  & -\frac{1}{2} & 0            \\
+				       0            & -\frac{1}{2} & \frac{1}{2}  & 0            \\
+				       -\frac{1}{2} & 0            & 0            & \frac{1}{2}
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 0 & 0  & -1 \\
+				       0 & 1 & -1 & 0  \\
+				       0 & 0 & 0  & 0  \\
+				       0 & 0 & 0  & 0
+			       \end{pmatrix}\),
+
+			       得 \(\alpha_{1} = (1, 0, 0, 1)^{\mathrm{T}} \), \( \alpha_{2} = (0, 1, 1, 0)^{\mathrm{T}} \);
+
+			       \( -\frac{1}{2}E - A = \begin{pmatrix}
+				       -\frac{1}{2} & 0            & 0            & -\frac{1}{2} \\
+				       0            & -\frac{1}{2} & -\frac{1}{2} & 0            \\
+				       0            & -\frac{1}{2} & -\frac{1}{2} & 0            \\
+				       -\frac{1}{2} & 0            & 0            & -\frac{1}{2}
+			       \end{pmatrix} \rightarrow \begin{pmatrix}
+				       1 & 0 & 0 & 1 \\
+				       0 & 1 & 1 & 0 \\
+				       0 & 0 & 0 & 0 \\
+				       0 & 0 & 0 & 0
+			       \end{pmatrix}\),
+
+			       得 \(\alpha_{3} = (1, 0, 0, -1)^{\mathrm{T}} \), \( \alpha_{4} = (0, 1, -1, 0)^{\mathrm{T}} \);
+
+			       标准形 \( \frac{1}{2}y_{1}^{2} + \frac{1}{2}y_{2}^{2} - \frac{1}{2}y_{3}^{2} - \frac{1}{2}y_{4}^{2} \), \( X = \begin{pmatrix}
+				       \frac{1}{\sqrt{2}} & 0                  & \frac{1}{\sqrt{2}}  & 0                   \\
+				       0                  & \frac{1}{\sqrt{2}} & 0                   & \frac{1}{\sqrt{2}}  \\
+				       0                  & \frac{1}{\sqrt{2}} & 0                   & -\frac{1}{\sqrt{2}} \\
+				       \frac{1}{\sqrt{2}} & 0                  & -\frac{1}{\sqrt{2}} & 0
+			       \end{pmatrix}Y \)
+		 \end{enumerate}
+
+
+	 \paragraph{} %2
+		 \begin{enumerate}
+			 \item %(1)
+			       \begin{flalign*}
+				        & \quad x_{1}^{2} + 2x_{2}^{2} - x_{3}^{2} + 2x_{1}x_{2} - 2x_{3}x_{1}                                       & \\
+				        & = [x_{1}^{2} + 2x_{1}(x_{2} - x_{3}) + (x_{2} - x_{3})^{2}] - (x_{2} - x_{3})^{2} + 2x_{2}^{2} - x_{3}^{2} & \\
+				        & = (x_{1} + x_{2} - x_{3})^{2} + x_{2}^{2} + 2x_{2}x_{3} - 2x_{3}^{2}                                       & \\
+				        & = (x_{1} + x_{2} - x_{3})^{2} + (x_{2} + x_{3})^{2} - 3x_{3}^{2}                                           &
+			       \end{flalign*}
+
+
+
+			       则 \( \begin{cases}
+				       y_{1} = x_{1} + x_{2} - x_{3} \\
+				       y_{2} = x_{2} + x_{3}         \\
+				       y_{3} = x_{3}
+			       \end{cases} \),
+
+			       得 \( X = \begin{pmatrix}
+				       1 & -1 & 2  \\
+				         & 1  & -1 \\
+				         &    & 1
+			       \end{pmatrix}Y \), 化为 \( y_{1}^{2} + y_{2}^{2} - 3y_{3}^{2} \).
+			 \item %(2)
+			       令 \( \begin{cases}
+				       x_{1} = y_{1} + y_{2} \\
+				       x_{2} = y_{1} - y_{2} \\
+				       x_{3} = y_{3}
+			       \end{cases} \)
+
+			       则 \( f = 2y_{1}^{2} - 2y_{2}^{2} + 4y_{1}y_{3} = 2(y_{1}^{2} + 2y_{1}y_{3} + y_{3}^{2}) - 2y_{2}^{2} - 2y_{3}^{2} = 2(y_{1} + y_{3})^{2} - 2y_{2}^{2} - 2y_{3}^{2}, \)
+
+			       则 \( \begin{cases}
+				       z_{1} = y_{1} + y_{3} \\
+				       z_{2} = y_{2}         \\
+				       z_{3} = y_{3}
+			       \end{cases} \Rightarrow \begin{cases}
+				       y_{1} = z_{1} - z_{3} \\
+				       y_{2} = z_{2}         \\
+				       y_{3} = z_{3}
+			       \end{cases} \)
+
+			       故 \( X = \begin{pmatrix}
+				       1 & 1  & -1 \\
+				       1 & -1 & -1 \\
+				       0 & 0  & 1
+			       \end{pmatrix}Z \), 化为 \( 2z_{1}^{2} - 2z_{2}^{2} - 2z_{3}^{2} \).
+			 \item %(3)
+			       \begin{flalign*}
+				        & \quad x_{1}^{2} - x_{2}^{2} + 2x_{1}x_{2} + 4x_{3}x_{1}                                          & \\
+				        & = [x_{1}^{2} + 2(x_{2} + 2x_{3})x_{1} + (x_{2} + 2x_{3})^{2}] - (x_{2} + 2x_{3})^{2} - x_{2}^{2} & \\
+				        & = (x_{1} + x_{2} + 2x_{3})^{2} - x_{2}^{2} - (x_{2} + 2x_{3})^{2}                                &
+			       \end{flalign*}
+			       令 \( \begin{cases}
+				       y_{1} = x_{1} + x_{2} + 2x_{3} \\
+				       y_{2} = x_{2}                  \\
+				       y_{3} = x_{2} + 2x_{3}
+			       \end{cases} \)
+
+			       得 \( X = \begin{pmatrix}
+				       1 & 0            & -1          \\
+				       0 & 1            & 0           \\
+				       0 & -\frac{1}{2} & \frac{1}{2}
+			       \end{pmatrix}Y \), 化为 \( y_{1}^{2} - y_{2}^{2} - y_{3}^{2} \).
+
+			 \item %(4)
+			       令 \( X = \begin{pmatrix}
+				       1 & -1 \\
+				       1 & -1 \\
+				       1 & 1  \\
+				       1 & 1
+			       \end{pmatrix}Y \), 则 \( x_{1}x_{4} + x_{2}x_{3} = y_{1}^{2} - y_{4}^{2} + y_{2}^{2} - y_{3}^{2} \)
+		 \end{enumerate}
+
+
+	 \paragraph{} %3
+		 \begin{tabular}{ccccc}
+			     & 秩 & 正惯性指数 & 负惯性指数 & 符号差 \\
+			 1.                            \\
+			 (1) & 3 & 2     & 1     & 1   \\
+			 (2) & 3 & 2     & 1     & 1   \\
+			 (3) & 3 & 1     & 2     & -1  \\
+			 (4) & 4 & 2     & 2     & 0   \\
+			 2.                            \\
+			 (1) & 3 & 2     & 1     & 1   \\
+			 (2) & 3 & 1     & 2     & -1  \\
+			 (3) & 3 & 1     & 2     & -1  \\
+			 (4) & 4 & 2     & 2     & 0
+		 \end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+	 \paragraph{} %4
+		 依题意 \( A \sim \begin{pmatrix}
+			 9 &   &   \\
+			   & 9 &   \\
+			   &   & 0
+		 \end{pmatrix} \) 且 \( A\beta_{3} = 0 \)
+
+		 考虑 \( PP^{\mathrm{T}} = \begin{pmatrix}
+			 1 \\
+			 2 \\
+			 2
+		 \end{pmatrix}(1\ 2\ 2) = \begin{pmatrix}
+			 1 & 2 & 2 \\
+			 2 & 4 & 4 \\
+			 2 & 4 & 4
+		 \end{pmatrix} \rightarrow \begin{pmatrix}
+			 1 & 2 & 2 \\
+			   &   &   \\
+			   &   &
+		 \end{pmatrix} \)
+
+		 由于不同的特征值的特征向量正交. 故 \( PP^{\mathrm{T}}\alpha = 0 \) 的解即其他特征向量
+
+		 则可取 \( \alpha_{2} = \begin{pmatrix}
+			 2  \\
+			 -1 \\
+			 0
+		 \end{pmatrix} \), \( \alpha_{3} = \begin{pmatrix}
+			 2 \\
+			 0 \\
+			 -1
+		 \end{pmatrix} \), \( Q = \begin{pmatrix}
+			 1 & 2  & 2  \\
+			 2 & -1 & 0  \\
+			 2 & 0  & -1
+		 \end{pmatrix} \), \( \Lambda = \begin{pmatrix}
+			 0 &   &   \\
+			   & 9 &   \\
+			   &   & 9
+		 \end{pmatrix} \)
+
+		 故 \( A = Q\Lambda Q^{-1} = \begin{pmatrix}
+			 1 & 2  & 2  \\
+			 2 & -1 & 0  \\
+			 2 & 0  & -1
+		 \end{pmatrix}\begin{pmatrix}
+			 0 &   &   \\
+			   & 9 &   \\
+			   &   & 9
+		 \end{pmatrix}\begin{pmatrix}
+			 \frac{1}{9} & \frac{2}{9}  & \frac{2}{9}  \\
+			 \frac{2}{9} & -\frac{5}{9} & \frac{4}{9}  \\
+			 \frac{2}{9} & \frac{4}{9}  & -\frac{5}{9}
+		 \end{pmatrix} = \begin{pmatrix}
+			 8  & -2 & -2 \\
+			 -2 & 5  & -4 \\
+			 -2 & -4 & 5
+		 \end{pmatrix} \)
+
+
+\section{6.3}
+
+ \subsection{} %A
+
+
+	 \paragraph{} %1
+		 \begin{enumerate}
+			 \item %(1)
+			       由 \( A = \begin{pmatrix}
+				       1  & -4 & 1  \\
+				       -4 & 1  & -2 \\
+				       1  & -2 & 2
+			       \end{pmatrix} \), \( f_{A}(\lambda) = \begin{vmatrix}
+				       \lambda - 1 & 4           & -1          \\
+				       4           & \lambda - 1 & 2           \\
+				       -1          & 2           & \lambda - 2
+			       \end{vmatrix} \),
+
+			       由于 \( \begin{vmatrix}
+				       1  & -4 \\
+				       -4 & 1
+			       \end{vmatrix} = -7 < 0 \), 故 \( A \) 不是正定的.
+			 \item %(2)
+			       \( A = \begin{pmatrix}
+				       7  & -2 & 0  \\
+				       -2 & 8  & -2 \\
+				       0  & -2 & 6
+			       \end{pmatrix} \), 又 \( |7| > 0 \), \( \begin{vmatrix}
+				       7  & -2 \\
+				       -2 & 8
+			       \end{vmatrix} = 52 > 0 \), \( \begin{vmatrix}
+				       7  & -2 & 0  \\
+				       -2 & 8  & -2 \\
+				       0  & -2 & 6
+			       \end{vmatrix} = 284 > 0 \), 故 \( A \) 是正定的.
+			 \item %(3)
+			       \( A = \begin{pmatrix}
+				       99 & -6  & 24  \\
+				       -6 & 130 & -30 \\
+				       24 & -30 & 70
+			       \end{pmatrix} \), 又 \( |99| > 0 \), \( \begin{vmatrix}
+				       99 & -6  \\
+				       -6 & 130
+			       \end{vmatrix} > 0 \), \( \begin{vmatrix}
+				       99 & -6  & 24  \\
+				       -6 & 130 & -30 \\
+				       24 & -30 & 70
+			       \end{vmatrix} = 743040 > 0 \), 故 A 是正定的.
+			 \item %(4)
+			       \( A = \begin{pmatrix}
+				       10 & 4   & 12  \\
+				       4  & 2   & -14 \\
+				       12 & -14 & 1
+			       \end{pmatrix} \), 又 \( |A| = -3588 < 0 \), 不是正定的
+		 \end{enumerate}
+
+	 \paragraph{} %2
+		 证明: 依题意, \( X^{\mathrm{T}}AX \), \( X^{\mathrm{T}}BX \) 是正定二次型, 则
+		 \[ X^{\mathrm{T}}(A+B)X = X^{\mathrm{T}}AX + X^{\mathrm{T}}BX, \]
+		 由于 \( X^{\mathrm{T}}AX > 0 \), \( X^{\mathrm{T}}BX > 0 \), 故 \( X^{\mathrm{T}}(A+B)X > 0 \),
+
+		 故 \( X^{\mathrm{T}}(A+B)X \) 也是正定的,
+
+		 从而 \( A+B \) 也是正定矩阵.
+
+	 \paragraph{} %3
+		 \begin{enumerate}
+			 \item %(1)
+			       \( A = \begin{pmatrix}
+				       4  & -1 & 2  \\
+				       -1 & 1  & -1 \\
+				       2  & -1 & t
+			       \end{pmatrix} \), 则 \( |A| > 1 \), \( \begin{vmatrix}
+				       4  & -1 \\
+				       -1 & 1
+			       \end{vmatrix} = 3 > 0 \), \( \begin{vmatrix}
+				       4  & -1 & 2  \\
+				       -1 & 1  & -1 \\
+				       2  & -1 & t
+			       \end{vmatrix} > 0 \),
+
+			       得 \( t > \frac{4}{3} \).
+			 \item %(2)
+			       \( A = \begin{pmatrix}
+				       2  & t & -3 \\
+				       t  & 3 & 1  \\
+				       -3 & 1 & 4
+			       \end{pmatrix} \), 由 \( \begin{vmatrix}
+				       2 & t \\
+				       t & 3
+			       \end{vmatrix} > 0 \) 得 \( t^{2} < 6 \), 又 \( \begin{vmatrix}
+				       2  & t & -3 \\
+				       t  & 3 & 1  \\
+				       -3 & 1 & 4
+			       \end{vmatrix} > 0 \),
+
+			       得 \( -4t^{2} - 72t - 49 > 0 \),
+
+			       但由 \( t > -\sqrt{6} \),
+
+			       则 \( 4t^{2} + 72t + 49 > 193 - 72\sqrt{6} > 16 > 0 \), 故它不可能正定
+		 \end{enumerate}
+
+
+	 \paragraph{} %4
+		 证明: 由于 \( A^{\mathrm{T}} = A \), 则 \( A = A^{\mathrm{T}}A^{-1}A \), 即 \( A^{-1} \) 合同于 \( A \),
+
+		 由于 \( A \) 是正定的, 故 \( A^{-1} \) 也正定.
+
+
+	 \paragraph{} %5
+		 证明: 由于 \( f(x_{1}, x_{2}, \dots, x_{n}) = X^{\mathrm{T}}AX = \sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}x_{i}x_{j} \) 正定,
+
+		 取 \( X_{i} = \varepsilon_{i}^{\mathrm{T}} = (0, \dots, 0, 1, 0, \dots, 0)^{\mathrm{T}} \) (其中第 \( i \) 个分量 \( x_{i} = 1 \)),
+
+		 则 \( X_{i}^{\mathrm{T}}AX_{i} = a_{ii}x_{i}^{2} = a_{ii} > 0 \).

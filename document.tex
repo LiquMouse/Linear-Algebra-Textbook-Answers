@@ -1,0 +1,38 @@
+\documentclass{article}
+\input{header.tex}
+\usepackage{microtype}
+\usepackage[fontsize=10pt]{fontsize}
+
+\begin{document}
+%目录
+\pagenumbering{roman}
+\pagestyle{content}
+\tableofcontents
+\newpage
+
+%内容
+\pagestyle{main}
+\pagenumbering{arabic}
+\setlength{\parindent}{0pt}
+\begin{sloppypar}
+
+
+	%调整公式和文本的间距
+	\setlength{\abovedisplayskip}{0.5em}
+	\setlength{\belowdisplayskip}{0.5em}
+	\setlength{\abovedisplayshortskip}{0.5em}
+	\setlength{\belowdisplayshortskip}{0.5em}
+
+	\input{chapter1.tex}
+
+	\input{chapter2.tex}
+
+	\input{chapter3.tex}
+
+	\input{chapter4.tex}
+
+	\input{chapter5.tex}
+
+	\input{chapter6.tex}
+\end{sloppypar}
+\end{document}
