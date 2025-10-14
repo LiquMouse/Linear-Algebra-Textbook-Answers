@@ -15,7 +15,7 @@
 \usepackage{needspace}
 
 %行距
-%\linespread{0.5em}
+\linespread{1.5}
 \lineskip = 0.5em
 
 %页眉页脚(正文)
@@ -23,21 +23,21 @@
 \renewcommand{\headrule}{\hbox to\headwidth{\color{myblue}\leaders\hrule height \headrulewidth\hfill}}
 \setlength{\headheight}{25pt}
 \fancypagestyle{main}[fancy]{
-	\fancyhf{}
-	\fancyhead[L]{\normalsize v0.4.4 }
-	\fancyhead[C]{\normalsize \bf \textcolor{myblue}{线性代数学习辅导·}\textcolor{mygreen}{\leftmark}}
-	\fancyhead[R]{\normalsize \bf \textcolor{myblue}{原作: 大数据202 沈同}}
-	\fancyfoot[L]{\footnotesize 排版: lsy }
-	\fancyfoot[C]{\footnotesize 请以原版手稿为准 \par \textcolor{white}{.}\par\scriptsize 发布: \href{https://yunpan.ustb.edu.cn/link/AAACDF27F8DE57475DAD561FCDF2CE2BC7}{\textcolor{myblue}{\underline{https://yunpan.ustb.edu.cn/link/AAACDF27F8DE57475DAD561FCDF2CE2BC7}}}, 提取码: ustb}
-	\fancyfoot[R]{\bf \thepage}
+    \fancyhf{}
+    \fancyhead[L]{\normalsize v0.4.5 }
+    \fancyhead[C]{\normalsize \bf \textcolor{myblue}{线性代数学习辅导·}\textcolor{mygreen}{\leftmark}}
+    \fancyhead[R]{\normalsize \bf \textcolor{myblue}{原作: 大数据202 沈同}}
+    \fancyfoot[L]{\footnotesize 排版: lsy }
+    \fancyfoot[C]{\footnotesize 请以原版手稿为准 \par \textcolor{white}{.}\par\scriptsize 发布: \href{https://yunpan.ustb.edu.cn/link/AAACDF27F8DE57475DAD561FCDF2CE2BC7}{\textcolor{myblue}{\underline{https://yunpan.ustb.edu.cn/link/AAACDF27F8DE57475DAD561FCDF2CE2BC7}}}, 提取码: ustb}
+    \fancyfoot[R]{\bf \thepage}
 }
 
 %页眉页脚(目录)
 \fancypagestyle{content}[main]{
-	\fancyhead[C]{\normalsize \bf \textcolor{myblue}{线性代数学习辅导·}\textcolor{mygreen}{目录}}
-	\fancyfoot[L]{}
-	\fancyfoot[C]{\thepage}
-	\fancyfoot[R]{}
+    \fancyhead[C]{\normalsize \bf \textcolor{myblue}{线性代数学习辅导·}\textcolor{mygreen}{目录}}
+    \fancyfoot[L]{}
+    \fancyfoot[C]{\thepage}
+    \fancyfoot[R]{}
 }
 
 % 重新定义 \sectionmark 以减少页眉标题文字和序号间隔
@@ -51,8 +51,8 @@
 
  %设置矩阵内的分数形式为tfrac
  \newcommand{\setupmatrixfrac}{%
-	 \let\frac\tfrac
-	 \let\dfrac\tfrac
+     \let\frac\tfrac
+     \let\dfrac\tfrac
  }
  \AtBeginEnvironment{matrix}{\setupmatrixfrac}
  \AtBeginEnvironment{pmatrix}{\setupmatrixfrac}
@@ -88,56 +88,56 @@
  %subsection, (A), (B), ...
  \renewcommand{\thesubsection}{(\Alph{subsection})} %设置编号为大写字母
  \titleformat{\subsection}[block]
-	 {\normalfont\large\bfseries\centering} %正常字体, 大, 加粗, 居中
-	 {\thesubsection}
-	 {0pt}
-	 {}
-	 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
+     {\normalfont\large\bfseries\centering} %正常字体, 大, 加粗, 居中
+     {\thesubsection}
+     {0pt}
+     {}
+     \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 
-	 %paragraph, 题号
-	 \renewcommand{\theparagraph}{\arabic{paragraph}.} %设置编号为阿拉伯数字加 "."
+     %paragraph, 题号
+     \renewcommand{\theparagraph}{\arabic{paragraph}.} %设置编号为阿拉伯数字加 "."
 
-	 \titleformat{\paragraph}
-		 [hang]
-		 {\color{myblue}}    %设置成自定义的蓝色
-		 {\theparagraph}     %编号加"."
-		 {0.5ex}             %编号后间距
-		 {}                  %标题前代码不设置
-		 \titlespacing{\paragraph}{0pt}{0.5em}{0em}
+     \titleformat{\paragraph}
+         [hang]
+         {\color{myblue}}    %设置成自定义的蓝色
+         {\theparagraph}     %编号加"."
+         {0.5ex}             %编号后间距
+         {}                  %标题前代码不设置
+         \titlespacing{\paragraph}{0pt}{0.5em}{0em}
 
 
-		 %subparagraph, 小题号
-		 \renewcommand{\thesubparagraph}{(\arabic{subparagraph})}
-		 \titleformat{\subparagraph}
-			 [runin] %见 titlesec 文档
-			 {} %不特别设置格式
-			 {\thesubparagraph}
-			 {20em}
-			 {}
-			 \titlespacing{\subparagraph}{0pt}{0.75em}{1em}
+         %subparagraph, 小题号
+         \renewcommand{\thesubparagraph}{(\arabic{subparagraph})}
+         \titleformat{\subparagraph}
+             [runin] %见 titlesec 文档
+             {} %不特别设置格式
+             {\thesubparagraph}
+             {20em}
+             {}
+             \titlespacing{\subparagraph}{0pt}{0.75em}{1em}
 
-			 %目录设置
-			 % === 为 section 添加点线引导符 ===
-			 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % section 用点线
-			 %\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} % subsection 保持点线（默认已有）
+             %目录设置
+             % === 为 section 添加点线引导符 ===
+             \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % section 用点线
+             %\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} % subsection 保持点线（默认已有）
 
-			 \setlength{\cftsecnumwidth}{3em}  %设置目录中section正文到左端的距离
-			 \renewcommand{\contentsname}{\centerline{目\quad 录}}    %设置目录标题居中且为 "目录"
-			 \setcounter{tocdepth}{3} % 3 表示到 subsubsection，不包括 paragraph (4)
-			 \tocloftpagestyle{content}
+             \setlength{\cftsecnumwidth}{2.25em}  %设置目录中section正文到左端的距离
+             \renewcommand{\contentsname}{\centerline{目\quad 录}}    %设置目录标题居中且为 "目录"
+             \setcounter{tocdepth}{3} % 3 表示到 subsubsection，不包括 paragraph (4)
+             \tocloftpagestyle{content}
 
-			 \pretocmd{\section}{\needspace{6\baselineskip}}{}{}
+             \pretocmd{\section}{\needspace{7\baselineskip}}{}{}
  \pretocmd{\subsection}{\needspace{4\baselineskip}}{}{}
-	 \pretocmd{\subsubsection}{\needspace{4\baselineskip}}{}{}
+     \pretocmd{\subsubsection}{\needspace{4\baselineskip}}{}{}
 
-		 % 小题列表
-		 \setlist[enumerate,1]{
-			 label=(\arabic*),
-			 left=0pt,
-			 wide=0pt,
-			 labelsep=0.5em,
-			 topsep=0.5em,
-			 itemsep=1ex,
-			 leftmargin=*,
-			 align=left
-		 }
+         % 小题列表
+         \setlist[enumerate,1]{
+             label=(\arabic*),
+             left=0pt,
+             wide=0pt,
+             labelsep=0.5em,
+             topsep=0.5em,
+             itemsep=1ex,
+             leftmargin=*,
+             align=left
+         }
