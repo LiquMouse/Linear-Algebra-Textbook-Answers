@@ -1308,12 +1308,12 @@
 
 
          故当 \( b = -2 \) 时方程组有解.
-         \begin{enumerate}
-             \item %(1)
-                   当 \( b = -2 \) 且 \( a = -8 \) 时, 自由未知量为 \( x_{1}, x_{4} \),
+         \begin{enumerate}[label=\textcircled{\small \arabic*}]
+             \item
+                   当 \( b = -2 \) 且 \( a = -8 \) 时, 自由未知量为 \( x_{3}, x_{4} \),
 
                    取 \( \begin{pmatrix}
-                       x_{1} \\
+                       x_{3} \\
                        x_{4}
                    \end{pmatrix} = \begin{pmatrix}
                        0 \\
@@ -1326,7 +1326,7 @@
                    \end{pmatrix} \)
 
                    取 \( \begin{pmatrix}
-                       x_{1} \\
+                       x_{3} \\
                        x_{4}
                    \end{pmatrix} = \begin{pmatrix}
                        1 \\
@@ -1363,6 +1363,34 @@
                        0  \\
                        1
                    \end{pmatrix} \)
+             \item
+                   当 \(b=-2\) 且 \(a \neq -8\) 时, 自由未知量为 \(x_{4}\),
+
+                   取 \(x_{4}=0\), 得特解 \( \begin{pmatrix}
+                       -1 \\
+                       1  \\
+                       0  \\
+                       0
+                   \end{pmatrix} \)
+
+                   取 \(x_{4}=1\), 得基础解系 \(\eta_{1} = \begin{pmatrix}
+                       4  \\
+                       -2 \\
+                       1  \\
+                       0
+                   \end{pmatrix}\)
+
+                   故此时 \(x=\begin{pmatrix}
+                       -1 \\
+                       1  \\
+                       0  \\
+                       0
+                   \end{pmatrix} + c\begin{pmatrix}
+                       4  \\
+                       -2 \\
+                       1  \\
+                       0
+                   \end{pmatrix}\)
          \end{enumerate}
 
 
